@@ -1,0 +1,4 @@
+hello
+world
+git
+文字
