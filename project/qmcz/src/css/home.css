@@ -1,0 +1,264 @@
+/*热门推荐*/
+.hot {
+    border-bottom: 1px solid #ddd;
+}
+
+.hot-con {
+    width: 900px;
+    height: 300px;
+    background: #fff;
+    display: none;
+    float: left;
+}
+
+.hot-cur {
+    display: block;
+}
+
+.hot-list {
+    width: 100px;
+    list-style: none;
+    float: right;
+    border-left: 1px solid #ddd;
+}
+
+.hot-list li {
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.hot-con .hotimgbox {
+    width: 320px;
+    float: left;
+    margin-top: 38px;
+}
+
+.hot-list .list-cur {
+    color: #2ccd52;
+    border-left: 1px solid #2ccd52;
+}
+
+/*内容*/
+.content {
+    width: 550px;
+    float: right;
+    margin-top: 38px;
+}
+
+.content h4 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    color: #828587;
+    margin-left: 10px;
+}
+
+.content .lab {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.content .lab i.glyphicon {
+    font-size: 12px;
+    color: #828587;
+}
+
+.content .lab .site_ALink {
+    color: #828587;
+}
+
+.content p.desc {
+    font-size: 16px;
+}
+
+.content .progress {
+    height: 8px;
+}
+
+.content .progress .progress-bar {
+    background-color: #2ccd52;
+}
+
+.content .financingdata {
+    height: 90px;
+}
+
+.content .financingdata .ftp {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.content .financingdata .ftdiv {
+    float: left;
+}
+
+.content .financingdata .scdiv {
+    float: left;
+    margin: 0 180px;
+}
+
+.content .financingdata .thdiv {
+    float: right;
+}
+
+/*筹资项目*/
+/*标题*/
+.title-pub .blue {
+    width: 5px;
+    height: 24px;
+    background: #2ccd52;
+    float: left;
+    margin-right: 10px;
+}
+.title-pub h3 {
+    font-weight: bold;
+}
+.title-pub h3 a{
+    float: right;
+    font-size: 14px;
+    line-height: 30px;
+    color: #999999;
+    margin-right: 30px;
+}
+.title-pub h3 a:hover{
+    color: #2ccd52;
+    text-decoration: none;
+}
+
+.title-pub .row {
+    margin-top: 50px;
+}
+
+.title-pub {
+    margin-top: 50px;
+}
+
+/*内容*/
+.financingItem {
+    width: 322px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    float: left;
+    margin: 0 34px;
+}
+
+.financingItem .icon {
+    width: 320px;
+    height: auto;
+}
+
+.financingItem .financing {
+    padding: 0 19px;
+}
+
+.financing .financingtext {
+    height: 139px;
+}
+
+.financing .financingtext .financingh3 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #222;
+    line-height: 20px;
+    height: 50px;
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+}
+
+.financing .financingtext .financingp {
+    overflow: hidden;
+    color: #888888;
+    line-height: 20px;
+    margin-top: 12px;
+    font-size: 11px;
+    height: 60px;
+    margin-bottom: 0;
+}
+
+.financing .financingbox {
+    padding: 16px 0 0 0;
+    border-top: 1px dashed #dcdcdc;
+    height: 107px;
+}
+
+/**/
+.financing .financingbox .financingratio .progress {
+    height: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.financing .financingbox .financingratio .progress .progress-bar {
+    background-color: #2ccd52;
+}
+
+/**/
+.financing .financingbox .glyphicon {
+    color: #999999;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.financing .financingbox .financing_box a {
+    color: #999;
+    text-decoration: none;
+}
+
+.financing .financingdata {
+
+}
+
+.financing .financingdata p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.financing .financingdata p.ftp {
+    font-weight: bold;
+}
+
+.financing .financingdata .ftdiv {
+    width: 60px;
+    float: left;
+}
+
+.financing .financingdata .ftdiv p.ftp {
+    color: #ff5001;
+}
+
+.financing .financingdata .scdiv {
+    width: 60px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.financing .financingdata .thdiv {
+    width: 60px;
+    float: right;
+}
+
+/*合作单位*/
+
+.col-md-2 .icon {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.col-md-2 .icon img {
+    margin: 0 auto;
+    width: 130px;
+    height: auto;
+}

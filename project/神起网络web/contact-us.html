@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联系我们-联系方式</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/contact-us.css">
+</head>
+
+<body>
+<!--header-->
+<header>
+  <div class="header">
+    <h1><a href="index.html"><img src="images/logo.png" alt="神起网络" title="神起网络" ></a></h1>
+    <!-- nav-->
+    <nav>
+      <ul>
+        <!--li-1-->
+        <li><a href="index.html" class="a1">首页<span>Home</span></a></li>
+        <!--li-2-->
+        <li> <a href="about-us.html" class="a1">关于我们<span>About us</span></a>
+          <div class="subnav">
+            <p><a href="about-us.html">公司简介</a></p>
+            <p><a href="about-us2.html">企业文化</a></p>
+          </div>
+        </li>
+        <!--li-3-->
+        <li> <a href="news1.html" class="a1">新闻资讯<span>News</span></a>
+          <div class="subnav">
+            <p><a href="news2.html">公司新闻</a></p>
+          </div>
+        </li>
+        <!--li-4-->
+        <li> <a href="service1.html"  class="a1">产品服务<span>Service</span></a>
+          <div class="subnav">
+            <p><a href="service1.html">神起传媒</a></p>
+            <p><a href="service2.html">游戏发行</a></p>
+            <p><a href="service3.html">游戏联运</a></p>
+            <p><a href="service4.html">游戏GS服务</a></p>
+          </div>
+        </li>
+        <!--li-5-->
+        <li> <a href="partner.html"  class="a1">战略合作<span>Partner</span></a>
+          <div class="subnav">
+            <p><a href="partner.html">合作模式</a></p>
+          </div>
+        </li>
+        <!--li-6-->
+        <li> <a href="careers.html"  class="a1">招贤纳士<span>Careers</span></a> </li>
+        <!--li-7-->
+        <li> <a href="contact-us.html"  class="a1">联系我们<span>Contact us</span></a>
+          <div class="subnav">
+            <p><a href="contact-us.html">联系方式</a></p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav end--> 
+  </div>
+</header>
+<!--header  end-->
+<div class="banner"></div>
+
+<!--section16-->
+<section class="section16">
+  <div class="section16_tit">
+   <div class="Ch">联系我们</div>
+    <div class="En">CONTACT US</div>
+    <p><a href="contact-us.html">联系方式</a></p>
+  </div>
+  <div class="section16_main">
+  		<div class="main_l">
+        	<p>地址：江西省南昌市青山湖区京东大道1068号</p>
+            <p>电话：0791-88286707</p>
+            <p>邮箱：2851672299@qq.com</p>
+            <p>招聘咨询热线：0791-88286720 18970862012 18970032123</p>
+            <p>公司地址：南昌市青山湖区京东南大道1068号（世纪风情三期对面）</p>
+            <p>乘车路线：7路或208路，至“京东大道口”下车</p> 
+        </div>
+        
+        <div class="main_r">
+        	<p>商务合作 卢先生 邮箱：1957935029@qq.com &nbsp;&nbsp;QQ:1957935029</p>
+            <p>商务外放 杨先生 邮箱：2851672301@qq.com&nbsp;&nbsp;  QQ:2851672301</p>
+            <p>移动游戏商务合作 杨先生 邮箱：2851672301@qq.com&nbsp;&nbsp;  QQ:2851672301</p>
+            <p>广告投放合作 蒋先生 邮箱：58290@qq.com  &nbsp;&nbsp;QQ:58290</p>
+            <p>网页游戏联运合作 李先生  邮箱：2851672292@qq.com &nbsp;&nbsp; QQ:2851672292</p>
+            <p>推广合作 黄先生 邮箱：2851672305@qq.com  &nbsp;&nbsp;QQ:2851672305</p> 
+        </div>
+ </div>
+ <div class="map">
+         	      <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+      <div style="width:1174px;height:563px;border:#ccc solid 1px; margin:0 auto;" id="dituContent"></div>
+      <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(115.973201,28.671569);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+    map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"神起网络",content:"江西省南昌市青山湖区京东大道1068号<br />电话：0791-88286707<br />邮箱：2851672299@qq.com",point:"115.973623|28.67",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+     //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,22),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    
+    initMap();//创建和初始化地图
+
+</script>
+         </div>
+  	
+</section>
+<!--section16 end--> 
+
+
+<!--footer-->
+<footer>
+  <div class="foot">
+    <div class="foot_top">
+      <div class="top_l"> <a href="index.html"></a> </div>
+      <div class="top_main">
+        <ul>
+          <li>
+            <h4>关于我们</h4>
+            <p><a href="about-us.html">公司简介</a></p>
+            <p><a href="about-us2.html">企业文化</a></p>
+          </li>
+          <li>
+            <h4>产品服务</h4>
+            <p><a href="service1.html">神起传媒</a></p>
+            <p><a href="service2.html">游戏发行</a></p>
+            <p><a href="service3.html">游戏联运</a></p>
+            <p><a href="service4.html">游戏GS服务</a></p>
+          </li>
+          <li>
+            <h4>战略合作</h4>
+            <p><a href="partner.html">合作模式</a></p>
+          </li>
+          <li>
+            <h4>关注微信</h4>
+            <img src="images/wx.jpg" > </li>
+        </ul>
+      </div>
+      <div class="top_r">
+        <h4>服务热线</h4>
+        <p>0791-88286707</p>
+        <time>全年365天8:30 - 23:00</time>
+        <p><a href="javascript:void(0)">在线客服</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="foot_bot">
+    <p>电信增值业务经营许可证 文网文:湘网文许字[2014]1015-003号 赣ICP备05002395号-5 Copyright © 2012-2017 神起网络 www.52sqwl.com All rights reserved.</p>
+    <div class="pic"> <a href="javascript:void(0)"><img src="images/book-1.jpg"></a> <a href="javascript:void(0)"> <img src="images/book-2.jpg"></a> <a href="javascript:void(0)"><img src="images/book-3.jpg"></a> <a href="javascript:void(0)"><img src="images/book-4.jpg"></a> </div>
+  </div>
+</footer>
+<!--footer end-->  
+</body>
+</html>

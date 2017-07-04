@@ -1,0 +1,41 @@
+<ion-view view-title="首页">
+    <ion-content>
+        <ion-refresher pulling-icon="ion-chevron-up" on-refresh="getData()" pulling-text="正在刷新" spinner="lines" >
+
+        </ion-refresher>
+        <!--轮播-->
+
+        <ion-slide-box  auto-play="true" show-pager="false" id="index-slide">
+            <ion-slide ng-repeat="y in data[0].ads">
+                <div class="box ">
+                    <p>{{y.title}}</p>
+                    <img ng-src={{y.imgsrc}}>
+                </div>
+            </ion-slide>
+
+        </ion-slide-box>
+
+        <!--卡片-->
+        <div class="list card" ng-repeat="x in data1">
+            <div class="item image left">
+
+                <img ng-src={{x.imgsrc}}/>
+
+            </div>
+
+
+            <div class="item right" id="list-content">
+
+
+                <a ui-sref="tabs.newsdetail({id:x.docid})">{{x.title}}</a>
+                <p  class="date">{{x.lmodify}}</p>
+
+                <span class="redbox">{{x.source}}</span>
+                <span class="liulan">浏览:{{x.replyCount}}</span>
+            </div>
+
+
+        </div>
+
+    </ion-content>
+</ion-view>

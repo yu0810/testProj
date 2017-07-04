@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+
+	<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css">
+	<link rel="stylesheet" type="text/css" href="css/hexagons.css">
+
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+
+<!--  -->
+	<script type="text/javascript">
+		$(function(){
+			$("#box").fullpage({
+				sectionsColor: ['#fff', '#fff', '#fff', '#fff','#fff','#fff','#fff'],
+				anchors: ['page1', 'page2', 'page3', 'page4',"page5", 'page6', 'page7'],
+				menu: '#menu',
+				loopBottom: true,
+				});
+			setInterval(function(){
+		        $.fn.fullpage.moveSlideRight();
+		    }, 3000);
+
+		   
+		    $("#z_wx").hover(
+		    	function(){
+		    		
+		    		$("#z_wx").attr({src:"images/z_wx1.png"});
+		    	},function(){
+					
+		    		$("#z_wx").attr({src:"images/z_wx.png"});
+		    	});
+		    $("#z_wb").hover(
+		    	function(){
+		    		
+		    		$("#z_wb").attr({src:"images/z_wb1.png"});
+		    	},function(){
+					
+		    		$("#z_wb").attr({src:"images/z_wb.png"});
+		    	});
+
+		});
+	</script>
+	
+</head>
+<body>
+	<ul id="menu">
+		<img src="images/logo.png">
+		<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+		<li data-menuanchor="page2"><a href="#page2">蛋糕</a></li>
+		
+		<li data-menuanchor="page3"><a href="#page3">配饮</a></li>
+		<li data-menuanchor="page4"><a href="#page4">西点师</a></li>
+		<li data-menuanchor="page5"><a href="#page5">全国配送</a></li>	
+		<li data-menuanchor="page6"><a href="#page6">关于tunecake</a></li>
+		<div id="menu_r">
+			<select>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+				<option>深圳</option>
+				<option>杭州</option>
+				<option>成都</option>
+			</select>
+			
+			<span id="login">登录</span>/<span id="enroll">注册</span>
+			<img src="images/shop1.png" id="_shop">
+		</div>
+
+	</ul>	
+	<!-- login -->
+	<div id="mask_"></div>
+	<div id="login_show">
+		<ul id="_title">
+			<li class="_active"> 账号密码登录</li>
+			<li>手机验证码登录</li>
+		</ul>
+		<div id="_content">
+		<span class="login_close">×</span>
+			<div class="_current">
+				<input type="text" name="" placeholder="请输入你的账号" id="uname">
+				<input type="password" name="" placeholder="请输入你的密码" id="upwd">
+				<input type="submit" name="" value="登录" id="_sub">
+			</div>
+			<div >
+				<input type="text" name="" placeholder="请输入你的手机号">
+				<input type="text" name="" placeholder="请输入验证码" >
+				<sapn class="yanzheng">获取验证码</sapn>
+				<input type="submit" name="" value="登录" id="_sub">
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("#login_show #_title li").click(function(){
+				$(this).addClass("_active").siblings().removeClass("_active");
+
+				$("#login_show #_content div").eq($(this).index()).addClass("_current").siblings().removeClass("_current");
+			});
+		});
+		$(function () {
+			$("#menu_r #login").click(function(){
+				
+				$("#mask_").show();
+
+				$("#login_show").show();
+
+			});
+			$("#login_show .login_close").click(function(){
+				$("#mask_").hide();
+
+				$("#login_show").hide();
+			});
+		});
+
+	</script>
+
+
+
+	<div id="box">
+		<div class="section section1" id="main">
+			<div class="slide"><img src="images/main1.jpg"></div>
+	        <div class="slide"><img src="images/main2.jpg"></div>
+	        <div class="slide"><img src="images/main3.jpeg"></div>
+	        <div class="slide"><img src="images/main4.jpg"></div>
+	        <div class="slide"><img src="images/main5.jpg"></div>
+		</div>
+		<div class="section section2">			
+			<div id="fenlei">
+				<ul id="totle_title">
+					<li class="_active">蛋糕</li>
+					<li>小切块</li>
+					<li>常温蛋糕</li>
+				</ul>
+				<div id="totle_content">
+					<div class="_current">
+						<ul class="series series1">
+							<h3>热卖系列</h3>
+							<li>黑白巧克力</li>
+							<li>卡百利</li>
+							<li>朗姆芝士</li>
+							<li>抹茶和栗</li>
+							<li>心雨心愿</li>
+							<li>黑方</li>
+						</ul>
+						<ul class="series series2">
+							<h3>特惠系列</h3>
+							<li>生日奶油</li>
+							<li>卡布奇诺</li>
+							<li>坚果芝士</li>
+							<li>榴莲飘飘</li>
+							<li>布莱克</li>
+							<li>核桃斯诺</li>
+						</ul>
+						
+					</div>
+					<div>
+						<ul class="series series1">
+							<h3>坚果系列</h3>
+							<li>栗蓉暗香</li>
+							<li>松香慕斯</li>
+							<li>核桃斯诺</li>
+							
+							<li>夏威夷果</li>
+							<li>白果奶酪</li>
+						</ul>
+						<ul class="series series2">
+							<h3>特惠系列</h3>
+							<li>布朗尼</li>
+							<li>松仁淡奶</li>
+							
+						</ul></div>
+					<div>
+						<ul class="series series1">
+							<h3>经典系列</h3>
+							<li>点心盒子</li>
+							<li>百香果</li>
+							<li>核桃</li>
+							
+							<li>布朗尼</li>
+							<li>白果奶酪</li>
+						</ul>
+						<ul class="series series2">
+							<h3>特惠系列</h3>
+							<li>布朗尼</li>
+							<li>松仁淡奶</li>
+							
+						</ul>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						$("#totle_title li").click(function(){
+							$(this).addClass("_active").siblings().removeClass("_active");
+							$("#totle_content div").eq($(this).index()).addClass("_current").siblings().removeClass("_current");
+						});
+
+
+					});
+				</script>
+				
+				
+				
+			</div>
+			<div class="section_r">
+					<ul class="accordion">
+						<li> <img src="images/cake1.jpg" title="DIVNATION" />
+						
+						</li>
+						<li> <img src="images/cake2.jpg"> </li>
+						<li> <img src="images/cake3.jpg"> </li>
+						<li> <img src="images/cake4.jpg"> </li>
+						<li> <img src="images/cake5.jpg"></li>
+							
+						
+						<li> <img src="images/cake6.jpg"> </li>
+						<li> <img src="images/cake7.jpg" title="J'ADIOR" /> </li>
+						<li> <img src="images/cake8.jpg">
+						</li>
+						<li> <img src="images/cake9.jpg"> </li>
+						<li> <img src="images/cake10.jpg"> </li>
+						<li> <img src="images/cake11.jpg"> </li>
+						<li> <img src="images/cake12.jpg">
+							
+						</li>
+						<li> <img src="images/cake13.jpg" title="DIO(R)EVOLUTION" /> </li>
+						<li> <img src="images/cake14.jpg"> </li>
+						<li> <img src="images/cake15.jpg"> </li>
+						<li> <img src="images/cake16.jpg"></li>
+							
+						
+						<li> <img src="images/cake17.jpg"> </li>
+						<li> <img src="images/cake18.jpg"> </li>
+
+					</ul>
+					<script type="text/javascript" src="js/jquery.gridAccordion.min.js"></script>
+					<script type="text/javascript">
+						$(function(){ 
+							$('.accordion').gridAccordion({
+								width: 850,
+								height: 450,
+								columns: 6,
+								distance: 2,
+								closedPanelWidth: 20,
+								closedPanelHeight: 20,
+								alignType: 'centerCenter',
+								slideshow: true,
+								panelProperties: {
+									0: {
+										captionWidth: 200,
+										captionHeight: 35,
+										captionTop: 30,
+										captionLeft: 30
+									},
+									4: {
+										captionWidth: 150,
+										captionHeight: 100,
+										captionTop: 30,
+										captionLeft: 650
+									},
+									7: {
+										captionWidth: 310,
+										captionHeight: 35,
+										captionTop: 350,
+										captionLeft: 40
+									},
+									8: {
+										captionWidth: 300,
+										captionHeight: 40,
+										captionTop: 150,
+										captionLeft: 35
+									},
+									11: {
+										captionWidth: 150,
+										captionHeight: 120,
+										captionTop: 300,
+										captionLeft: 30
+									},
+									14: {
+										captionWidth: 300,
+										captionHeight: 40,
+										captionTop: 30,
+										captionLeft: 50
+									},
+									16: {
+										captionWidth: 150,
+										captionHeight: 120,
+										captionTop: 150,
+										captionLeft: 10
+									},
+									18: {
+										captionWidth: 300,
+										captionHeight: 40,
+										captionTop: 130,
+										captionLeft: 50
+									}
+								}
+							});
+						});
+					</script>
+					
+			</div>
+
+		</div>
+		<!-- <div class="section section3">
+			
+		</div> -->
+		<div class="section section4">
+
+			<div id="fenlei">
+				<ul id="totle_title">
+					<li class="_active">咖啡</li>
+					<li>冰淇淋</li>
+					
+				</ul>
+				<div id="totle_content">
+					<div class="_current">
+						<ul class="series series1">
+							<h3>热卖系列</h3>
+							<li>美式咖啡</li>
+							<li>焦糖玛琪朵</li>
+							<li>卡布奇诺</li>
+							<li>白咖啡</li>
+							<li>拿铁</li>
+							<li>摩卡</li>
+						</ul>
+						<ul class="series series2">
+							<h3>特惠系列</h3>
+							<li>康宝蓝</li>
+							<li>维也纳</li>
+							
+							<li>喜拉多速溶</li>
+							<li>耶加雪啡速溶</li>
+							
+						</ul>
+						
+					</div>
+
+					<div>
+						<ul class="series series1">
+							<h3>春日系列</h3>
+							<li>春漾玫瑰</li>
+							<li>接骨木花</li>
+							<li>花漾派对</li>
+							
+							<li>芒果雪芭</li>
+							<li>蛋糕冰淇淋</li>
+						</ul>
+						<ul class="series series2">
+							<h3>花绽放系列</h3>
+							<li>花绽放冰淇淋</li>
+							<li>覆盆子玫瑰</li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+				<div class="section4_r">
+					<figure class="test1">
+						<img src="images/coffee1.jpg">
+						<figcaption>
+							<h2>摩卡</h2>
+							<p>最古老的咖啡</p>
+							<p>由意大利浓缩咖啡、巧克力酱、鲜奶油和牛奶混合而成</p>
+							<p>摩卡得名于有名的摩卡港</p>
+						</figcaption>
+					</figure>
+
+					<figure class="test2">
+						<img src="images/coffee2.jpg">
+						<figcaption>
+							<h2>焦糖玛奇朵</h2>
+							<p>焦糖玛奇朵就象征着甜蜜的印记，享受焦糖玛奇朵的美味，就要一口喝下</p>
+							<div></div>
+						</figcaption>
+					</figure>	
+					<figure class="test4">
+						<img src="images/coffee1.jpg">
+						<figcaption>
+							<h2>美式咖啡</h2>
+							<p>喝一杯原汁原味的黑咖啡，能够品尝到咖啡本身浓郁的风味，会被看作是品尝咖啡的行家里手。</p>
+							<div></div>
+						</figcaption>
+					</figure>
+					<figure class="test1">
+						<img src="images/coffee2.jpg">
+						<figcaption>
+							<h2>白咖啡</h2>
+							<p>白咖啡并不是指咖啡的颜色是白色的</p>
+							<p>经过特殊的加工流程，将咖啡的苦酸味、咖啡因含量降到最低</p>
+							<p>甘醇芳香不伤肠胃，保留咖啡原有的色泽和香味，口感爽滑，味道纯正，故得名为白咖啡</p>
+						</figcaption>
+					</figure>
+					<figure class="test2">
+						<img src="images/coffee1.jpg">
+						<figcaption>
+							<h2>拿铁</h2>
+							<p>拿铁咖啡(CoffeeLatte)是咖啡与牛奶交融的极至之作。维也纳的空气里，永远都飘荡着音乐和拿铁咖啡的味道。</p>
+							<div></div>
+						</figcaption>
+					</figure>	
+					<figure class="test4">
+						<img src="images/coffee2.jpg">
+						<figcaption>
+							<h2>康宝蓝</h2>
+							<p>只要在意大利浓缩咖啡中，加入适量的鲜奶油，即轻松地完成一杯康宝蓝。因为只加鲜奶油，所以有时亦被称为“单头马车”。</p>
+							<div></div>
+						</figcaption>
+					</figure>
+					<figure class="test1">
+						<img src="images/coffee1.jpg">
+						<figcaption>
+							<h2>卡布奇诺</h2>
+							<p>卡布奇诺咖啡是意大利咖啡的一种变化</p>
+							<p>在偏浓的咖啡上，倒入以蒸汽发泡的牛奶</p>
+							<p>此时咖啡的颜色就像卡布奇诺教会修士深褐色外衣上覆的头巾一样，咖啡因此得名</p>
+						</figcaption>
+					</figure>
+					<figure class="test2">
+						<img src="images/coffee2.jpg">
+						<figcaption>
+							<h2>维也纳</h2>
+							<p>以浓浓的鲜奶油和巧克力的甜美风味迷倒全球人士。雪白的鲜奶油上，洒落五色缤纷七彩米，扮相非常漂亮</p>
+							<div></div>
+						</figcaption>
+					</figure>	
+				</div>
+			
+		</div>
+		
+		<div class="section section5">
+			<div class="team_s">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tunecake拥有着来自法国、日本的世界级西点师，他们热衷于西点，热衷于烘焙，您的味蕾体验，是他们倾注全力的追求！无论您是否喜爱西点，在tunecake，您都会爱不释口</p>
+			</div>
+
+			<div class="team row"> 
+			<!-- effect-1 html -->
+			<div class="single-member effect-1">
+			<div class="member-image"> 
+			<img src="images/baker1.jpg" width="150" height="150"></div><!--member-image-->
+			<div class="member-info">
+			<h3>Pierre Herme</h3>
+			<h5>甜点界的毕加索</h5>
+			<p>24岁成为馥颂（FAUCHON）主厨<br/>经典作品：“马卡龙”和“ ISPAHAN”<br/>宣言：比蛋糕更重要的是笑容</p>
+			<a href="#"><div class="social-touch">查看更多>>
+			</div><!--social-touch--></a>
+			</div><!--member-info-->
+			</div><!--single-member effect-1-->
+			<!-- effect-1 html end --> 
+			<!-- effect-1 html -->
+			<div class="single-member effect-1">
+			<div class="member-image"> 
+			<img src="images/baker2.jpg" width="150" height="150">  
+			</div><!--member-image-->
+			<div class="member-info">
+			<h3>Michalak</h3>
+			<h5>明星甜品师</h5>
+			<p>法国著名甜品师<br/>曾获甜品世界杯冠军<br/>宣言：每一块甜品，都能直击食客心灵</p>
+			<a href="#"><div class="social-touch">查看更多>> 
+			</div><!--social-touch--></a>
+			</div><!--member-info-->
+			</div><!--single-member effect-1-->
+			<!-- effect-1 html end --> 
+			<!-- effect-1 html -->
+			<div class="single-member effect-1">
+			<div class="member-image"> 
+			<img src="images/baker3.jpg" width="150" height="150">  
+			</div><!--member-image-->
+			<div class="member-info">
+			<h3>辻口博启</h3>
+			<h5>从日本少爷到世界一流西点师</h5>
+			<p>曾获得最佳巧克力职人头衔<br/>法国里昂世界杯获得糖艺冠军<br/>宣言：以『和』的力量征服世界</p>
+			<a href="#"><div class="social-touch">查看更多>> 
+			</div><!--social-touch--></a>
+			</div><!--member-info-->
+			</div><!--single-member effect-1-->
+			<!-- effect-1 html end --> 
+			<!-- effect-1 html -->
+			<div class="single-member effect-1">
+			<div class="member-image"> 
+			<img src="images/baker4.jpg" width="150" height="150">  
+			</div><!--member-image-->
+			<div class="member-info">
+			<h3>横沟春雄</h3>
+			<h5>日本顶级西点师</h5>
+			<p>倾注全部心血<br/>专注的制作糕点<br/>宣言：你永远吃不到昨天的蛋糕</p>
+			<a href="#"><div class="social-touch">查看更多>> 
+			</div><!--social-touch--></a>
+			</div><!--member-info-->
+			</div><!--single-member effect-1-->
+			<!-- effect-1 html end --> 
+			</div><!--team row-->
+
+		</div>
+		<div class="section section6"  >
+			<div class="_pic"><img src="images/box.JPG"></div>
+			<div class="order-info">
+            <h2>订单信息</h2>
+            <form id="create-order" action="/activity-special_goods-submit.do" method="post">
+                <div class="order-info-content">
+                    <div class="order-info-left">
+		                        <ul>
+		                            <li><label>收货人：</label><input type="text" name="consignee" placeholder="收货人姓名" value=""/><span>请输入收货人姓名</span>
+		                            </li>
+		                            <li><label>联系方式：</label><input type="text" name="mobile" placeholder="收货人联系方式" value=""/><span>请输入联系方式</span>
+		                            </li>
+		                            <li class="city-list">
+		                                <label>城市：</label>
+		                                <select name="province" id="province">
+		                                    <option value="">省</option>
+		                                </select>
+		                                <select name="city" id="city">
+		                                    <option value="">市</option>
+		                                </select>
+		                                <select name="county" id="county">
+		                                    <option value="">区/县</option>
+		                                </select><span id="addrss-select-tips">请选择所在城市</span>
+		                                <input type="hidden" name="regionId" id="region-id" value=""/>
+		                            </li>
+		                            <li class="address-list">
+		                                <label>详细地址：</label>
+		                                <textarea name="address" placeholder="请输入详细地址"></textarea>
+		                                <span id="addressList">请填写配送信息</span>
+		                            </li>
+		                            <li class="national-city">(配送范围：北京、上海、广东、江苏、浙江、天津、安徽、辽宁、山东、河北)</li>
+		                        </ul>
+		                    </div>
+		                    <div class="order-info-right">
+		                        <p>商品金额：¥<span id="item_cost">0.00</span></p>
+		                        <p>配送费：¥0.00</p>
+		                        <div class="total-amount"><p>合计：¥<span id="total_amount">0.00</span></p></div>
+		                        <p class="last-p">发货及到货时间参考产品详情页说明</p>
+		                        <div class="total-button">
+		                            <input type="submit" value="在线付款" class="button disabled" disabled/>
+		                        </div>
+		                    </div>
+		                </div>
+
+		            </form>
+        		</div>
+		</div>
+		<div class="section section7">	
+			<div class="last_">
+				<img src="images/logo.png" id="tunecake">
+				<div class="cont"><a href=""><h5>企业合作</h5></a>
+					<a href=""><p>tunecake作为国内领先的高端品牌蛋糕供应商，通过企业个性化定制蛋糕卡，IT平台轻松订购，四大城市免费送货上门等一系列全程配套服务，帮助企业用户实现客户关系维护、员工福利关怀、商务活动庆典等专业服务。<br/><br/>tunecake长期以来保持业内服务领先水平，坚持以不断追求高品质为目标，努力为广大消费者提供更安全、更健康、更优质的产品及服务！<br/><br/>企业客户服务电话: 066-54688599</p></a>
+				</div>
+				
+				<div class="cont cont2"><a href=""><h5>购物指南</h5></a>
+					<a href=""><p>隐私保护政策</p></a>
+					<p>一般情况下，您无须提供您的姓名或其它个人信息即可访问我们的站点。但有时我们可能需要您提供一些信息，...</p>
+					<a href=""><p>蛋糕预订说明</p></a>
+					
+					<a href=""><p>发票信息说明</p></a>
+
+					<a href=""><p>修改订单信息说明</p></a>
+					<a href=""><p>优惠券使用说明</p></a>
+				</div>
+
+				<div class="cont cont3"><a href=""><h5>联系我们</h5></a>
+					<a href=""><p style="padding-left: 60px">客服热线:&nbsp;&nbsp;&nbsp;123456789</p></a>
+					<a href=""><p style="padding-left: 60px">订购热线:&nbsp;&nbsp;&nbsp;123456789</p></a>
+					<a href=""><p style="padding-left: 60px">传真  Fax:&nbsp;&nbsp;&nbsp;123456789</p></a>
+					<div class="tubiao">
+						<img src="images/z_wx.png" id="z_wx">
+
+						<img src="images/z_wb.png" id="z_wb">
+					</div>
+				</div>
+			</div>
+			<div class="yinsi">Copyright© tunecake蛋糕官网商城 2008-2017, 版权所有 豫ICP备458114号-1</div>
+
+		</div>
+		
+	
+  </div>
+  		
+</body>
+</html>

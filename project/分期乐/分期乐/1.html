@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+<style>
+.picScroll-top{ margin:0 auto;  width:210px;  overflow:hidden; position:relative;  border:1px solid #ccc;   }
+		.picScroll-top .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+		.picScroll-top .hd .prev,.picScroll-top .hd .next{ display:block;  width:9px; height:5px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer; background:url("images/arrow.png") 0 -100px no-repeat;}
+		.picScroll-top .hd .next{ background-position:0 -140px;  }
+		.picScroll-top .hd .prevStop{ background-position:-60px -100px;  }
+		.picScroll-top .hd .nextStop{ background-position:-60px -140px;  }
+		.picScroll-top .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+		.picScroll-top .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("images/icoCircle.gif") 0 -9px no-repeat; }
+		.picScroll-top .hd ul li.on{ background-position:0 0; }
+		.picScroll-top .bd{ padding:10px;   }
+		.picScroll-top .bd ul{ overflow:hidden; zoom:1; }
+		.picScroll-top .bd ul li{ text-align:center; zoom:1; }
+		.picScroll-top .bd ul li .pic{ text-align:center; }
+		.picScroll-top .bd ul li .pic img{ width:180px; height:90px; display:block;  padding:2px; border:1px solid #ccc; }
+		.picScroll-top .bd ul li .pic a:hover img{ border-color:#999;  }
+		.picScroll-top .bd ul li .title{ line-height:24px; }
+
+ ._cont_right{width:480px;height:499px;background:rgba(255,255,255,1)}
+ ._cont_right ._cont_right_content{width:450px;height:499px;box-sizing:border-box;margin-left:30px;padding-top:13px;border-left:1px solid #b4d9ff}
+ ._cont_right ._cont_right_content .bies{padding:0 0 9px 10px ; position: relative;height:162px;box-sizing:border-box;}
+ ._cont_right ._cont_right_content .bies i{ position:absolute;left:-9px;width:18px; height:18px; background-position:0 0 ;}
+ ._cont_right ._cont_right_content .bies .dt{width:150px;height:153px;}
+ ._cont_right ._cont_right_content .bies .dt p{margin-bottom:10px;font-size:12px}
+ ._cont_right ._cont_right_content .bies .dt .img_box{width:150px;height:110px;;box-sizing:border-box;padding-left:20px; }
+ ._cont_right ._cont_right_content .bies .dd{width:288px;height:145px;font-size:14px;padding:35px 26px 0 16px;box-sizing:border-box;}
+ ._cont_right ._cont_right_content .bies .dd h2{color:#494949;}
+._cont_right ._cont_right_content .bies .dd p{color:#8c8c8c;}
+ ._cont_right ._cont_right_content .bies .dd .r_price{color:#c5c5c5;margin:9px 0 12px;}
+ ._cont_right ._cont_right_content .bies .dd .r_price span{ font-family:arial;margin-left:3px;}
+ ._cont_right ._cont_right_content .bies .dd .r_btn{width:100%;background:#4a9df4; color:#fff; text-align:center;padding:5px 0;display:block}
+ ._cont_right ._cont_right_content .bies:hover .dd .r_btn{background:#60aeff}</style>
+</head>
+
+<body>
+<div class="picScroll-top">
+			<div class="bd">
+				<ul class="picList">
+					<div class="_cont_right fr">
+                	<ul class="_cont_right_content">
+                    	<li class="bies"><a href=""><i class="_main_ico"></i>
+                        <div>
+                        	<div class="dt fl"><p>2017-02-23 20:00:00开售</p>
+                            <div class="img_box">
+                       	    <img src="images/newpin5.jpg" width="110" height="110" alt="美图 T8 自拍美颜 全网通4G手机" title="美图 T8 自拍美颜 全网通4G手机"></div></div>
+                            <div class="dd fr">
+                            	<h2 class="ellipsis">美图 T8 自拍美颜 全网通4G手机</h2>
+                                <p class="ellipsis">双像素前置摄像头，美图T8让夜间自拍唯美高清</p>
+                                <div class="r_price">疯抢价：<span>¥3900</span></div>
+                                <div class="r_btn"><span>正在疯抢</span></div>
+                            </div>
+                        </div>
+                        
+                        </a></li>
+                       <li class="bies"><a href=""><i class="_main_ico"></i>
+                        <div>
+                        	<div class="dt fl"><p>2017-03-16 10:00:01开售</p>
+                            <div class="img_box">
+                       	    <img src="images/newpin6.jpg" width="110" height="110" alt="三星(SAMSUNG) Galaxy C5 Pro(C5010) 全网通4G手机" title="三星(SAMSUNG) Galaxy C5 Pro(C5010) 全网通4G手机"></div></div>
+                            <div class="dd fr">
+                            	<h2 class="ellipsis">三星(SAMSUNG) Galaxy C5 Pro(C5010) 全网通4G手机</h2>
+                                <p class="ellipsis">年轻即是正义！美于所见，此刻刚刚好</p>
+                                <div class="r_price">疯抢价：<span>¥2499</span></div>
+                                <div class="r_btn"><span>正在疯抢</span></div>
+                            </div>
+                        </div>
+                        
+                        </a></li>
+                       <li class="bies"><a href=""><i class="_main_ico"></i>
+                        <div>
+                        	<div class="dt fl"><p>2017-01-30 00:00:00开售</p>
+                            <div class="img_box">
+                       	    <img src="images/newpin7.jpg" width="110" height="110" alt="乐视(LeEco) 乐S3 全网通4G手机 双卡双待" title="乐视(LeEco) 乐S3 全网通4G手机 双卡双待"></div></div>
+                            <div class="dd fr">
+                            	<h2 class="ellipsis">乐视(LeEco) 乐S3 全网通4G手机 双卡双待</h2>
+                                <p class="ellipsis">领券再减！ 5.5英寸屏，最高4+32G内存，800+1600万像素，十核联发科X20处理器！</p>
+                                <div class="r_price">疯抢价：<span>¥1049</span></div>
+                                <div class="r_btn"><span>正在疯抢</span></div>
+                            </div>
+                        </div>
+                        
+                        </a></li>
+                    </ul>
+                </div>
+            	<!--内容right end-->  
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		 jQuery(".picScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,vis:3,trigger:"click"});
+		</script>
+
+
+<div class="_cont_right fr">
+                	<ul class="_cont_right_content">
+                    	<li class="bies"><a href=""><i class="_main_ico"></i>
+                        <div>
+                        	<div class="dt fl"><p>2017-02-23 20:00:00开售</p>
+                            <div class="img_box">
+                       	    <img src="images/newpin5.jpg" width="110" height="110" alt="美图 T8 自拍美颜 全网通4G手机" title="美图 T8 自拍美颜 全网通4G手机"></div></div>
+                            <div class="dd fr">
+                            	<h2 class="ellipsis">美图 T8 自拍美颜 全网通4G手机</h2>
+                                <p class="ellipsis">双像素前置摄像头，美图T8让夜间自拍唯美高清</p>
+                                <div class="r_price">疯抢价：<span>¥3900</span></div>
+                                <div class="r_btn"><span>正在疯抢</span></div>
+                            </div>
+                        </div>
+                        
+                        </a></li>
+                       <li class="bies"><a href=""><i class="_main_ico"></i>
+                        <div>
+                        	<div class="dt fl"><p>2017-03-16 10:00:01开售</p>
+                            <div class="img_box">
+                       	    <img src="images/newpin6.jpg" width="110" height="110" alt="三星(SAMSUNG) Galaxy C5 Pro(C5010) 全网通4G手机" title="三星(SAMSUNG) Galaxy C5 Pro(C5010) 全网通4G手机"></div></div>
+                            <div class="dd fr">
+                            	<h2 class="ellipsis">三星(SAMSUNG) Galaxy C5 Pro(C5010) 全网通4G手机</h2>
+                                <p class="ellipsis">年轻即是正义！美于所见，此刻刚刚好</p>
+                                <div class="r_price">疯抢价：<span>¥2499</span></div>
+                                <div class="r_btn"><span>正在疯抢</span></div>
+                            </div>
+                        </div>
+                        
+                        </a></li>
+                       <li class="bies"><a href=""><i class="_main_ico"></i>
+                        <div>
+                        	<div class="dt fl"><p>2017-01-30 00:00:00开售</p>
+                            <div class="img_box">
+                       	    <img src="images/newpin7.jpg" width="110" height="110" alt="乐视(LeEco) 乐S3 全网通4G手机 双卡双待" title="乐视(LeEco) 乐S3 全网通4G手机 双卡双待"></div></div>
+                            <div class="dd fr">
+                            	<h2 class="ellipsis">乐视(LeEco) 乐S3 全网通4G手机 双卡双待</h2>
+                                <p class="ellipsis">领券再减！ 5.5英寸屏，最高4+32G内存，800+1600万像素，十核联发科X20处理器！</p>
+                                <div class="r_price">疯抢价：<span>¥1049</span></div>
+                                <div class="r_btn"><span>正在疯抢</span></div>
+                            </div>
+                        </div>
+                        
+                        </a></li>
+                    </ul>
+                </div>
+            	<!--内容right end-->  
+</body>
+</html>

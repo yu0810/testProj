@@ -1,0 +1,10 @@
+语法：
+.clone()
+例：
+$("ul li").click(function(){
+	$(this).clone().appendTo("ul");	//复制当前节点，并将它追加到<ul>元素中
+})
+复制节点后，被复制的新元素并不具有任何行为，如果需要新元素也具有复制功能，可以使用
+以下代码：
+$(this).clone(true).appendTo("body");	//注意参数是true
+在clone()方法中传递了一个参数true，它的含义是复制元素的同时复制元素中所绑定的事件。

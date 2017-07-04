@@ -1,0 +1,144 @@
+<div class="slide">
+    <div class="container">
+        <!--轮播-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic"
+                    data-slide-to="{{$index}}" ng-repeat="slide in homeData.slideData"
+                    ng-class="{'active':$index==0}"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item" ng-class="{'active':$index==0}" ng-repeat="slide in homeData.slideData">
+                    <img ng-src="{{slide.img}}">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<!--热门推荐-->
+
+<!--热门项目-->
+<div class="hot">
+    <div class="container">
+        <div class="row">
+            <div class="title-pub">
+                <div class="blue"></div>
+                <h3>热门推荐<a href="#">查看更多>></a></h3>
+            </div>
+        </div>
+        <ul class="hot-list">
+            <li  ng-class="{'list-cur':$index==0}" ng-repeat="title in homeData.hotData">{{title.type}}</li>
+        </ul>
+        <div class="hot-con" ng-class="{'hot-cur':$index==0}" ng-repeat="content in  homeData.hotData">
+            <div class="hotimgbox">
+                <img ng-src="{{content.img}}" alt="">
+            </div>
+            <div class="content">
+                <h4>{{content.name}}</h4>
+                <p>by {{content.fname}}</p>
+                <p class="desc">{{content.desc}}</p>
+                <div class="lab">
+                    <i class="glyphicon glyphicon-tags"></i>
+                    <a href="#" class="site_ALink">{{content.tag}}</a>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                         aria-valuemin="0" aria-valuemax="100" style="width:{{content.sp}}%;">
+                    </div>
+                </div>
+                <div class="financingdata">
+                    <div class="ftdiv">
+                        <p class="ftp">￥{{content.rprice}}</p>
+                        <p class="scp">已筹款</p>
+                    </div>
+                    <div class="scdiv">
+                        <p class="ftp">{{content.rnum}}</p>
+                        <p class="scp">支持数</p>
+                    </div>
+                    <div class="thdiv">
+                        <p class="ftp">{{content.sp+"%"}}</p>
+                        <p class="scp">筹款进度</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--卫视主推-->
+<div class="container">
+    <div class="row item">
+        <div class="title-pub">
+            <div class="blue"></div>
+            <h3>筹资项目<a href="#">查看更多>></a></h3>
+        </div>
+        <div class="financingItem" ng-repeat="news in homeData.newData">
+            <div class="icon"><a href="#"><img ng-src="{{news.img}}"></a></div>
+            <div class="financing">
+                <div class="financingtext">
+                    <a href="#" class="financingh3">{{news.name}}</a>
+                    <p class="financingp">{{news.desc}}</p>
+                </div>
+                <div class="financingbox">
+                    <div class="financing_box">
+                        <i class="glyphicon glyphicon-tags"></i>
+                        <a href="#" class="site_ALink">{{news.tag}}</a>
+                    </div>
+                    <div class="financingratio">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:{{news.sp}}%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="financingdata">
+                        <div class="ftdiv">
+                            <p class="ftp">￥{{news.rprice}}</p>
+                            <p class="scp">已筹款</p>
+                        </div>
+                        <div class="scdiv">
+                            <p class="ftp">{{news.rnum}}</p>
+                            <p class="scp">支持数</p>
+                        </div>
+                        <div class="thdiv">
+                            <p class="ftp">{{news.sp+"%"}}</p>
+                            <p class="scp">筹款进度</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--合作单位-->
+<div class="container">
+    <div class="row">
+        <div class="title-pub">
+            <div class="blue"></div>
+            <h3>合作专区</h3>
+        </div>
+        <div class="col-md-2" ng-repeat="iunit in homeData.unitData">
+            <div class="icon">
+                <a href="#"><img ng-src="{{iunit.img}}" class="img-responsive text-center"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--卫视主推-->
+<!--合作单位-->

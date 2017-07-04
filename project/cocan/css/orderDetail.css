@@ -1,0 +1,167 @@
+*{
+    margin: 0;padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微软雅黑",Arial;
+}
+.header{
+    margin-top: -10px;
+    width: 100%;
+    height: 50px;
+    padding: 0% 5%;
+    background: #333333;
+}
+.header ul li:first-child{
+    float: left;
+
+}
+.header ul li:first-child a{
+    font-size: 22px;
+    line-height: 50px;
+    color: #cccccc;
+}
+.header ul li:last-child{
+    float: right;
+
+}
+.header ul li:last-child i{
+    font-size: 22px;
+    line-height:50px;
+    color: #ffffff;
+}
+.con{
+    width: 100%;
+}
+.con .o_ul{
+    width: 100%;
+
+}
+.con .o_ul .o_li1{
+    width: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+}
+.con .o_ul .o_li1 .o_h2{
+
+    font-size: 18px;
+    margin: 0px;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+.con .o_ul .o_li1 img{
+    margin-top: 10px;
+    display: block;
+    width: 22px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.con .o_ul .o_li2{
+    width: 25%;
+    float: right;
+    height: 100%;
+    line-height: 100%;
+}
+.con .o_ul .o_li2 i{
+    padding:0 10px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-left: 1px solid #cccccc;
+    color: #1e7dd7;
+
+}
+.banner_box{
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:190px;
+    background: #aaaaaa;
+}
+.banner{
+    clear: both;
+    width:300%;
+    height:160px;
+    position: absolute;
+}
+.banner div{
+    width:7%;
+    margin:0 0.6%;
+    float: left;
+}
+.banner img{
+    width: 100%;
+
+    height: 120px;
+}
+.banner div h3{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.border_list{
+    width: 100%;
+    height:auto;
+}
+.border_list .list_box{
+    width: 90%;
+    margin: 0 5%;
+    padding: 10px 0;
+    border-bottom: 1px solid #d8d8d8;
+    height: 78px;
+}
+.border_list .list_box div{
+    width: 25%;
+    float: left;
+
+}
+.border_list .list_box .time .b1{
+     float: left;
+     width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+ }
+.border_list .list_box .time .b2{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+}
+
+.border_list .list_box .place .b3{
+    float: left;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+}
+.border_list .list_box .place .b4{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.border_list .list_box .price .b5{
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #ff8600;
+    font-weight: 800;
+}
+.border_list .list_box .price .b6{
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: line-through;
+}
+.border_list .list_box .order_btn{
+    line-height: 30px;
+    margin-top: 16px;
+    height: 30px;
+    text-align: center;
+    border-radius: 32px;
+    background: #ff8600;
+    color: #ffffff;
+}

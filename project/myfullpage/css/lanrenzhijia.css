@@ -1,0 +1,71 @@
+
+/*.accordion {
+	width:1200px;
+	margin:0px auto;
+	list-style:none;
+	padding:0px;
+}*/
+/*.accordion img, .accordion .caption {
+	position:absolute;
+	left:-9999px;
+}*/
+.accordion {
+	/*background-color:#FFF;*/
+	border:4px solid rgba(0,0,0,0);
+}
+/*.accordion .panel {
+	background-color:#EEE;
+}*/
+/*.accordion {
+	width:1200px;
+	margin:0px auto;
+	list-style:none;
+	padding:0px;
+}*/
+/*.accordion img, .accordion .caption {
+	position:absolute;
+	left:-9999px;
+}*/
+.accordion {
+	position:relative;
+	overflow:hidden;
+}
+.accordion .panel {
+	background-color:#000;
+	background-repeat:no-repeat;
+	/*background-position:center center;*/
+	position:absolute;
+	overflow:hidden;
+}
+/*.accordion .shadow {
+	position:absolute;
+	right:0px;
+	width:25px;
+	height:100%;
+}*/
+/*.accordion .preloader {
+	width:62px;
+	height:14px;
+	position:absolute;
+	z-index:15;
+}*/
+/*.accordion .caption {
+	overflow:hidden;
+	position:absolute;
+	z-index:20;
+}*/
+/*.accordion .caption-background {
+	background:rgba(0, 0, 0, 0.5);
+	position:absolute;
+	width:100%;
+	height:100%;
+}*/
+/*.accordion .caption p {
+	color:#FFF;
+	margin:0px;
+	padding:10px;
+}*/
+/*.accordion .caption p a {
+	color:#FFF;
+}*/
+/* �������?����֮�� www.lanrenzhijia.com */

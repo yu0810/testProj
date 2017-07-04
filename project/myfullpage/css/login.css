@@ -1,0 +1,96 @@
+#mask_{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 1000;
+	display: none;
+}
+#login_show{
+	width:350px;height: 400px;position:absolute;top:50%;
+	left: 50%;margin-top: -150px;margin-left: -150px;
+	z-index: 9999;padding: 15px 20px;box-sizing: border-box;
+	border: 1px #aaa solid;background: #fff;
+	display: none;
+}
+.login_close{
+	display: block;
+	position: absolute;
+	background: #eee;
+	width: 30px;
+	height: 30px;
+	right: 0;
+	top: 0;
+	text-align: center;
+	line-height: 30px;
+	
+
+
+}
+.login_close:hover{
+	background: red;
+}
+#_title{
+	
+}
+#_title li{
+	float: left;
+	width: 50%;
+	height:50px;
+	line-height: 50px;
+	font-size:18px;
+	text-align: center; 
+	color: #BB9772;
+	cursor: pointer;
+}
+#_title ._active{
+	color: #684029;
+
+}
+#_content{
+
+}
+#_content div{
+	width: 99%;
+	height: 370px;
+	box-sizing: border-box;
+	/*border:1px #684029 dotted;*/
+	bottom: 15px;
+	left: 20px;
+	display: none;
+	
+
+
+}
+#_content ._current{
+	display: block;
+}
+#_content  input{
+	width: 100%;
+	height: 50px;
+	margin:10px 0px;
+	color: #aaa;
+	box-sizing: border-box;
+	padding-left: 10px
+
+}
+#_content div #_sub{
+	background: #684029;border: none;cursor: pointer;font-size: 18px;color: #fff;
+	border-radius: 3px;
+}
+#_content .yanzheng{
+	display: block;
+	background: #BB9772;
+	color: #fff;
+	width: 120px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	position: absolute;
+	right: 35px;
+	top: 153px;
+	cursor: pointer;
+	border-radius: 3px;
+
+
+}

@@ -1,0 +1,46 @@
+<ion-nav-bar class="bar-assertive">
+    <ion-nav-back-button class="button-clear">
+        <i class="ion-ios-arrow-back"></i>返回
+    </ion-nav-back-button>
+</ion-nav-bar>
+
+<!--ui-view区域-->
+<!--
+<ion-nav-view name="tabs">
+
+</ion-nav-view>
+-->
+
+
+
+<ion-tabs class="tabs-assertive tabs-icon-top">
+
+    <ion-tab title="首页" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" ui-sref="tabs.home">
+        <!-- 标签 1 内容 -->
+        <ion-nav-view name="tabs-home">
+
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="视频" icon-on="ion-social-youtube" icon-off="ion-social-youtube-outline" ui-sref="tabs.video">
+        <!-- 标签 2 内容 -->
+        <ion-nav-view name="tabs-video">
+
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="关注" icon-on="ion-ios-heart" icon-off="ion-ios-heart-outline" ui-sref="tabs.focus">
+        <!-- 标签 3 内容 -->
+        <ion-nav-view name="tabs-focus">
+
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="我" icon-on="ion-android-person" icon-off="ion-ios-person-outline" ui-sref="tabs.my">
+        <!-- 标签 3 内容 -->
+        <ion-nav-view name="tabs-my">
+
+        </ion-nav-view>
+    </ion-tab>
+
+</ion-tabs>

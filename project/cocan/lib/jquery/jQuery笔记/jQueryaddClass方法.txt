@@ -1,0 +1,4 @@
+.addClass(className)方法；
+.addClass(className):为每个匹配元素增加一个或多个样式名
+注意：.addClass()方法不会替换一个样式类名，它只是简单的添加一个样式类名到元素上
+通过addClass()方法新增加的类名会和原有类名通过空格分隔。

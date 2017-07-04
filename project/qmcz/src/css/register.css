@@ -1,0 +1,70 @@
+.register{
+    width: 100%;
+
+
+    background: #f7f7f7;
+    padding: 30px 130px ;
+
+}
+.register-wrap{
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: auto;
+    background: #fff;
+}
+.register-l{
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+    display: inline-block;
+}
+.register-l img{
+    width: 500px;
+    height: 375px;
+}
+.register-r{
+    border:1px solid #ddd;
+    width: 500px;
+    float: right;
+    padding: 20px 10px 10px;
+}
+.register-r .input-wrap{
+    height: 50px;
+}
+.register-r .tip{
+    width: 150px;
+    text-align: right;
+    display: inline-block;
+
+    color: #333;
+    font-size: 16px;
+}
+.register-r .isubmit{
+    border: none;
+    width: 300px;
+    height: 50px;
+    background: #dddddd;
+
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    margin: 17px 0 5px 80px;
+
+}
+.register-r .isubmitbk{
+    background: #2ccd52 !important;
+}
+.register-r input{
+    padding-left: 10px;
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.register-r .cbx{
+    width: 15px;
+    height: 15px;
+    margin-left: 100px;
+}
+.register-r .red{
+    color: red;
+}

@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>分期乐触屏版-购物车</title>
+<meta name="keywords" content="分期乐,分期付款,年轻人分期,分期购物,电脑分期付款,手机分期付款,相机分期付款,fenqile" />
+<meta name="description" content="分期乐是国内面向年轻人提供分期消费的金融服务平台，购买商品首付月供全网最低，还款超低手续费，支持网银、支付宝、财付通支付，可使用身份证办理分期；平台提供的手机、电脑、相机等商品均来自京东、易迅直供，100%正品行货。" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/m_base.css">
+<link rel="stylesheet" type="text/css" href="css/cart.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+<header class="m_header">
+<a href="index.html" class="goback"></a>
+购物车
+<span class="edit">编辑</span>
+</header>
+<div class="m_layout">
+	<section class="floor">
+   	  <div class="store">
+        	<input  name="checkbox" type="checkbox" class="select_store">
+            博观通达旗舰店
+            <i class="little_arrow"></i>
+            <span class="act">领券</span>
+        </div>
+        <div class="goods">
+        	<input  name="checkbox" type="checkbox" class="select  select2">
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <p class="chanpin">产品:5011990 </p>
+            <p class="chanpin_act">比加入时降90元</p>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="cartCountBtn">-</i>
+                <input type="text" class="amount" name="amount" value="1">
+                <i class="cartCountBtn">+</i>
+            </div>
+        </div>
+        <div class="goods">
+        	<input  name="checkbox" type="checkbox" class="select  select2">
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <p class="chanpin">产品:5011990 </p>
+            <p class="chanpin_act">比加入时降90元</p>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="cartCountBtn">-</i>
+                <input type="text" class="amount" name="amount" value="1">
+                <i class="cartCountBtn">+</i>
+            </div>
+        </div>
+    </section>
+    <section class="floor">
+   	  <div class="store">
+        	<input  name="checkbox" type="checkbox" class="select_store">
+            博观通达旗舰店
+            <i class="little_arrow"></i>
+            <span class="act">领券</span>
+        </div>
+        <div class="goods">
+        	<input  name="checkbox" type="checkbox" class="select  select2">
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <p class="chanpin">产品:5011990 </p>
+            <p class="chanpin_act">比加入时降90元</p>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="cartCountBtn">-</i>
+                <input type="text" class="amount" name="amount" value="1">
+                <i class="cartCountBtn">+</i>
+            </div>
+        </div>
+       
+    </section>
+    <section class="floor">
+   	  <div class="store">
+        	<input  name="checkbox" type="checkbox" class="select_store">
+            博观通达旗舰店
+            <i class="little_arrow"></i>
+            <span class="act">领券</span>
+        </div>
+        <div class="goods">
+        	<input  name="checkbox" type="checkbox" class="select  select2">
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <p class="chanpin">产品:5011990 </p>
+            <p class="chanpin_act">比加入时降90元</p>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="cartCountBtn">-</i>
+                <input type="text" class="amount" name="amount" value="1">
+                <i class="cartCountBtn">+</i>
+            </div>
+        </div>
+       
+    </section>
+    <!--<section class="floor">
+   	  <div class="store">
+        	<i class="circle b"></i>
+            博观通达旗舰店
+            <i class="little_arrow"></i>
+            <span class="act">领券</span>
+        </div>
+        <div class="goods">
+        	<i class="circle circle2 b"></i>
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <span class="chanpin">产品:5011990 </span>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="minus">-</i>
+                <i class="n_num">1</i>
+                <i class="plus">+</i>
+            </div>
+        </div>
+    </section>
+    <section class="floor">
+   	  <div class="store">
+        	<i class="circle c"></i>
+            博观通达旗舰店
+            <i class="little_arrow"></i>
+            <span class="act">领券</span>
+        </div>
+        <div class="goods">
+        	<i class="circle circle2 c"></i>
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <span class="chanpin">产品:5011990 </span>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="minus">-</i>
+                <i class="n_num">1</i>
+                <i class="plus">+</i>
+            </div>
+        </div>
+    </section>
+    <section class="floor">
+   	  <div class="store">
+        	<i class="circle d"></i>
+            博观通达旗舰店
+            <i class="little_arrow"></i>
+            <span class="act">领券</span>
+        </div>
+        <div class="goods">
+        	<i class="circle circle2 d"></i>
+            <a href="" class="goods_pic"></a>
+            <p class="month">月供:41.45元起</p>
+            <h4 class="tit">Swarovski施华洛世奇<br/> 经典小天鹅系列 BGSY MS11 </h4>
+            <span class="chanpin">产品:5011990 </span>
+            <span class="price">869元</span>
+            <div class="num">
+            	<i class="minus">-</i>
+                <i class="n_num">1</i>
+                <i class="plus">+</i>
+            </div>
+        </div>
+    </section>-->
+</div>
+<footer class="foot_tab_box">
+	<div class="cal">
+    	<input  name="checkbox" type="checkbox" class="select select3">
+    	<p class="total1">合计：<span>0.00</span>元</p>
+        <span class="fristpay"> 首付月供：<span>0.00</span>元</span>
+    </div>
+ 	<div class="cal_money">
+    	结算(<span>0</span>)
+    </div>
+    
+</footer>
+<script>
+	$(".floor .select_store").click(function(){
+		if($(this).attr("checked")=="checked"){
+			$(this).parent().parent().find(".select").attr("checked","checked");
+			$(this).attr("checked","checked");
+			
+			}else{
+				$(this).parent().parent().find(".select").removeAttr("checked");
+				$(this).removeAttr("checked");
+				
+				}
+				amount();
+		})
+		
+	$(".floor .select").click(function(){
+		var j=0;
+		var section=$(this).parent().parent();
+		var se=section.find(".select");
+		for(var i=0;i<se.length;i++){
+			if(se.eq(i).attr("checked")=="checked")
+				j++;
+			}
+		if(j==0){
+			section.find(".select_store").removeAttr("checked");
+			}else if(j>0){
+				section.find(".select_store").attr("checked","checked")
+				}
+		})
+
+
+
+	$(".cartCountBtn").click(function(){
+		var amount_val=parseInt($(this).parent().find(".amount").val());
+			
+		if($(this).index()==0){
+			if(amount_val!=1){
+					amount_val--;
+				}
+			}else if($(this).index()==2){
+				amount_val++;
+			}
+			$(this).parent().find(".amount").val(amount_val);
+			amount();
+	})
+	
+	
+	
+	$(".cal .select").click(function(){
+		if($(this).attr("checked")=="checked"){
+			$(".floor .select").attr("checked","checked");
+			$(".floor .select_store").attr("checked","checked");
+			$(this).attr("checked","checked");
+			amount();
+			}else{
+				$(".floor .select").removeAttr("checked");
+				$(".floor .select_store").removeAttr("checked");
+				$(this).removeAttr("checked");
+				amount();
+				}
+				
+		})
+	$(".floor .select").click(amount)
+	function amount(){
+		var j=0;
+		var num=0;
+		var paymon=0;
+		var select_elment=$(".floor .select");
+		for(var i=0;i<select_elment.length;i++){
+			if(select_elment.eq(i).attr("checked")=="checked"){
+				var o_floor=select_elment.eq(i).parent().parent();
+				var money=parseFloat(o_floor.find(".price").html());
+				var o_goods=select_elment.eq(i).parent();
+				var paymonth=parseFloat(o_goods.find(".month").html().split(":")[1]);
+				
+				var amout_val=parseInt(o_floor.find(".num input").val());
+				
+				num=money*amout_val+num;
+				paymon=paymonth*amout_val+paymon;
+				j=j+amout_val;
+				
+				}
+			}
+		if(j>0){
+			$(".foot_tab_box .cal_money").css({"background":"#fe4979","cursor":"pointer"});
+			}else{
+				$(".foot_tab_box .cal_money").css({"background":"#aaa","cursor":"not-allowed"});
+			}
+		paymon=paymon.toFixed(2);
+		
+		num=num.toFixed(2);
+		$(".total1 span").html(num);
+		
+		$(".foot_tab_box .cal_money span").html(j);
+		$(".fristpay span").html(paymon);
+		}
+</script>
+<script>
+//鼠标滚动距顶部多远 才显示一个块
+$(window).scroll(function(e){
+
+   if($(document).scrollTop()>6){
+	
+		 $(".m_header").addClass("fixed");
+	
+   }
+   
+   else{
+	    $(".m_header").removeClass("fixed");
+	
+   }
+ 
+});
+
+
+</script>
+</body>
+</html>

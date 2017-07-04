@@ -1,0 +1,204 @@
+/* CSS Document */
+body{color:#707070; background:#fff}
+#topbar{ width:100%;height:120px; background:#fff; border-bottom:5px solid #3b9bff;}
+.topbar{ height:120px; line-height:110px; position:relative}
+.topbar img{ display:inline-block;}
+.topbar .cart{display:inline-block; font-size:20px; position:relative; color:#3b9bff; top:12px; left:20px}
+.topbar .welcome{font-size:16px; color:#3b9bff; top:16px; position:relative}
+.topbar .username{font-size:20px; margin:0 10px}
+.topbar .username:hover{ text-decoration:none}
+.topbar .username:hover i{ transform:rotate(225deg); transition:all ease 1s; top:5px}
+.topbar .welcome:hover .usermes{ display:block}
+.topbar .username i{ width:15px; height:15px; border:2px solid #aaa; display:inline-block; transform:rotate(45deg); border-top:0; border-left:0; margin:0 8px; position:relative}
+
+.topbar .usermes{ width:300px; height:200px; background:rgba(255,255,255,1); position:absolute; top:75px; right:70px; z-index:100; padding:5px; border:1px solid #e4e4e4;display:none}
+.topbar .usermes .u_top{ height:89px; border-bottom:1px  dashed #e4e4e4; position:relative}
+.topbar .usermes .u_top i{ display:block; width:76px; height:76px; background:url(../images/avt_default1.png)  no-repeat; background-size:contain; float:left; margin-top:5px}
+
+.topbar .usermes .u_top p{ display:inline-block; line-height:90px}
+.topbar .usermes .u_top p a{ color:#3b9bff; margin:0 8px}
+.topbar .usermes .u_top p span{ display:inline; color:#ccc; font-size:12px}
+
+.topbar .usermes .u_bot{color:#aaa; line-height:25px; padding:5px}
+.topbar .usermes .u_bot li{ float:left; padding:0 16px; text-align:center}
+.topbar .usermes .u_bot .tixian{ width:290px; height:40px; background:#3b9bff; color:#fff; text-align:center; border:0; border-radius:3px; margin-top:10px; font-size:16px; }
+
+#nav{ width:100%; background:#fff;}
+.nav{ height:35px; position:relative; padding-top:20px; border-bottom:2px solid #e4e4e4;}
+.nav_list{ height:33px;}
+.nav_list li{ float:left; font-size:16px; font-weight:700; line-height:16px; padding-bottom:15px; margin-left:-1px; cursor:pointer; text-align:center; line-height:1.1; padding-left:25px;}
+.nav_list li .num{ color:#3b9bff; padding:0 30px 0 5px; font-size:14px; font-weight:400; font-family:arial; border-right:1px solid #e4e4e4;}
+.nav_list li:last-child .num{ border:0}
+.nav_list .current{color:#3b9bff; border-bottom:2px solid #3b9bff}
+
+.address{ height:25px; line-height:25px; font-size:14px;}
+.address_text{ display:inline-block; margin-right:10px}
+.add{display:inline-block; padding:0 8px; border:1px solid #e4e4e4;cursor:pointer;  position:relative}
+.r_arrow{ display:inline-block; width:10px; height:10px; border:1px solid #aaa; transform:rotate(45deg); margin-left:10px; border-left:none; border-top:none}
+.add:hover .r_arrow{ transform:rotate(225deg); transition:all ease 0.5s}
+.detail_add{ width:350px; height:200px; background:rgba(255,255,255,1); position:absolute; right:-1px; top:25px; display:none; z-index:-10; box-sizing:border-box; border:1px solid #e4e4e4}
+.add:hover .detail_add{ display:block;}
+.add:hover{ border-bottom:0;z-index:100; }
+
+
+.goods{ position:relative}
+.goods .pub{display:none}
+.goods .active{display:block;}
+
+.goods_list{}
+
+.goods_list .cxb{display:inline-block; width:15px; height:15px; border:1px solid #aaa; border-radius:8px; margin-right:15px; cursor:pointer;}
+.store{ line-height:30px; font-size:16px; padding-left:15px; margin-bottom:15px}
+.goods_li{border:1px solid #ccc; width:100%; box-sizing:border-box; padding:15px; height:180px; margin-bottom:30px}
+.goods_li ul li{float:left; margin-right:15px;}
+.goods_li ul li:last-child{ margin-right:0;}
+.goods_li ul li .cxb1{ float:left;width:15px; height:15px; border:1px solid #aaa; border-radius:8px; cursor:pointer; display:block}
+.goods_li ul .img_box{border:1px solid #e4e4e4; background:url(../images/history1.jpg) no-repeat; width:150px; height:150px; background-size:contain; display:inline-block}
+.goods_li ul .text{ width:250px;}
+.goods_li ul .text .goods_text{width:100%; margin-bottom:15px; font-size:14px }
+.goods_li ul .text .goods_text:hover{ color:#3b9bff}
+.goods_li ul .text a{ display:block}
+.goods_li ul .text i{display:inline-block; width:18px; height:18px; margin-right:10px; top:4px; position:relative }
+.goods_li ul .addnum{ width:150px; height:150px; }
+.goods_li ul .addnum .num_wrap{ width:100px; height:50px; margin:50px auto; box-sizing:border-box; border:1px solid #eee}
+.goods_li ul .addnum .num_wrap span{ display:block; float:left; text-align:center; line-height:50px; font-size:16px}
+
+.goods_li ul .addnum .num_wrap .num_d{ width:25px; border-right:1px solid #eee; font-size:24px; cursor:pointer}
+.goods_li ul .addnum .num_wrap .num_n{ width:46px;}
+.goods_li ul .addnum .num_wrap .num_p{ width:25px; float:right;border-left:1px solid #eee;font-size:24px;cursor:pointer}
+
+.goods_li ul .choice{ width:200px; height:150px;  font-size:14px;}
+.goods_li ul .choice .y_cho{width:200px;height:30px;}
+.goods_li ul .choice  p{float:left; width:70px; text-align:right}
+.goods_li ul .choice  .y_cho span{ cursor:pointer; float:right; padding:0 10px; border:1px solid #fe4979; text-align:center; width:55px; background: rgba(255,0,0,0.1)}
+.goods_li ul .choice  .you_pay{ height:30px; width:200px}
+.goods_li ul .choice  .you_pay b{ float:right;}
+
+.goods_li ul .price{width:150px; height:60px;  text-align:center; font-size:14px;padding:45px 0; line-height:30px}
+.goods_li ul .price p{float:left; width:70px;  text-align:right}
+.goods_li ul .price strong{float:right; color:#fe4979; font-size:18px}
+.goods_li ul .price strong i{font-size:14px; font-family:arial}
+.goods_li ul .price .all_price{}
+
+.goods_li ul .edit{width:150px; height:60px;  text-align:center; line-height:30px; padding:45px 0; font-size:14px;}
+.goods_li ul .edit a{ display:block}
+.goods_li ul .edit a:hover{ color:#fe4979}
+
+
+
+.buy{ width:1200px; background:#ccc; height:60px; line-height:60px; font-size:14px}
+.fixed{ position:fixed; bottom:0; z-index:10000}
+.buy_cho ul li{ float:left; padding:0 15px;}
+.buy_cho ul li i{display:block; width:15px; height:15px; border:1px solid #aaa; border-radius:8px; cursor:pointer; float:left; margin-top:20px; margin-right:15px}
+.buy_cho ul li a:hover{ color:#fe4979}
+
+.buy_pay p{ float:left; font-size:14px;}
+.buy_pay p span{ margin:0 5px; font-size:24px; color:#fe4979}
+.buy_pay .yixuan{ margin-right:30px}
+
+.jiesuan{ width:100px; height:60px; border:none; color:#fff; background:#aaa; border-radius:3px; font-size:18px; letter-spacing:5px; text-align:center; cursor:pointer}
+
+/*2,3*/
+.jianggoods{font-size:16px; padding:0 20px;}
+.jianggoods a{ margin:0 10px; color:#3b9bff}
+
+/*4*/
+.collect_top{width:1200px; height:50px; background:#fcfcfc;}
+.collect_top span{width:300px; font-size:16px;}
+.allcoll{ color:#3b9bff; line-height:50px;}
+.seccoll{ height:40px;padding:5px 0; }
+.seccoll input{ width:220px; height:40px; padding:10px 15px ; float: left; font-size:14px}
+.seccoll button{ float:left; width:80px; border:0; height:40px; background:#3b9bff; color:#fff;font-size:16px; cursor:pointer}
+.collect{ width:1200px; border:1px solid #e4e4e4; box-sizing:border-box; margin-top:20px;}
+
+
+
+
+
+
+#others{ width:100%; background:#fff;}
+.others{ box-sizing:border-box; border:1px solid #e4e4e4; margin-top:30px;}
+.o_nav{ height:35px; position:relative; padding-top:20px; border-bottom:2px solid #e4e4e4;}
+.o_nav_list{ height:33px;}
+.o_nav_list li{ float:left; font-size:16px; font-weight:700; line-height:16px; margin-left:-1px; cursor:pointer; text-align:center; line-height:1.1; padding:0 25px 15px 25px;}
+.o_nav_list .o_current{color:#3b9bff; border-bottom:2px solid #3b9bff}
+
+.o_pub{ display:none; margin-top:20px}
+.o_act{ display:block}
+
+
+/*.others 1*/
+.picMarquee-left{overflow:hidden; position:relative;   }
+.picMarquee-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px; display:none }
+		
+.picMarquee-left .bd{ padding:10px; }
+.picMarquee-left .bd ul{ overflow:hidden; }
+.picMarquee-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+.picMarquee-left .bd ul li .pic{ text-align:center; position:relative; overflow:hidden}
+.picMarquee-left .bd ul li .pic img{ width:200px; height:200px; display:block; padding:2px; border:1px solid #ccc; }
+.picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+.picMarquee-left .bd ul li .title{}
+.picMarquee-left .bd ul li .title a{ color:#fff}
+
+.picMarquee-left .bd ul li .pic .addcart{ height:35px; background:#3b9bff; width:210px; position:absolute; top:0; line-height:35px; text-align:center; font-size:16px;  transform:translate(0,-40px); transition:all ease 0.5s; opacity:0.8}
+.picMarquee-left .bd ul li .pic .addcart a{color:#fff;}
+.picMarquee-left .bd ul li .pic .addcart a:hover{ text-decoration:none}
+.picMarquee-left .bd ul li .pic:hover .addcart{transform:translate(0,0px);}
+
+.picMarquee-left .bd ul li .title .bigsell{ width:206px; background:#ff91b0; height:40px; line-height:40px; padding:0 10px; box-sizing:border-box; font-size:12px}
+.picMarquee-left .bd ul li .title .bigsell b{ font-weight:normal; font-size:16px}
+
+/*.others 2*/
+ .hui_cont .cont_ul{ overflow:hidden}
+ .hui_cont .cont_li a:hover{ text-decoration:none}
+ .hui_cont .cont_li{width:240px; height:278px; border-right:1px solid #eee; box-sizing:border-box;padding:30px 14px 0px 14px;background:#fff; position:relative}
+ 
+  .hui_cont .cont_li .addcart{ height:35px; background:#3b9bff; width:210px; position:absolute; top:0; line-height:35px; text-align:center; font-size:16px;  transform:translate(0,-40px); transition:all ease 0.5s; opacity:0.8; z-index:100}
+.hui_cont .cont_li .addcart a{color:#fff;}
+.hui_cont .cont_li:hover .addcart{transform:translate(0,0px);}
+
+.hui_cont .cont_li .imgbox{ position:relative; overflow:hidden}
+ .hui_cont .cont_li .imgbox img{margin:0 auto;}
+
+ .hui_cont .cont_li .imgbox em{position:absolute;left:-260px;top:0;width:260px;height:220px;background: rgba(255,255,255,0.4); transform:skewx(-15deg);}
+ .hui_cont .cont_li:hover .imgbox em{ transition:all ease-in-out 0.4s;left:300px}
+ .hui_cont .cont_li .cont_li_text{font-size:14px;color:#292929;width:100%;margin:15px 0px;}
+ .hui_cont .cont_li .cont_li_price{ font-size:12px; color:#8e8e8e;margin-bottom:3px;}
+ .hui_cont .cont_li .cont_li_price span{font-family:arial;margin-right:3px;}
+.hui_cont .cont_li .cont_li_btn{height:35px; background:#ff91b0;color:#fff;margin:0 -15px;padding-left:15px;line-height:35px;font-size:15px; position:relative}
+ .hui_cont .cont_li .cont_li_btn span{font-family:arial;}
+ .hui_cont .cont_li .cont_li_btn span em{font-size:12px;}
+ .hui_floor .hui_cont .cont_li .cont_li_btn .pricedown{height:35px;background:#ff7ea2;padding:0px 10px 0px 18px; position:absolute;top:0; right:0;}
+ .hui_cont .cont_li .cont_li_btn .pricedown i{width:0; height:0;overflow:hidden;font-size:0;display:inline-block;border-width:18px 9px; border-color: transparent transparent transparent #ff91b0;border-style:dashed dashed dashed solid; position:absolute;left:0; top:0;}
+ .hui_cont .cont_li:hover .cont_li_btn{background:#ff6f98;}
+ .hui_cont .cont_li:hover .cont_li_btn .pricedown i{border-color: transparent transparent transparent #ff6f98;}
+ .hui_cont .cont_li:hover { box-shadow:0 0 10px #CCC; z-index:99; position:relative;}
+
+.unlike{ text-align:center; height:40px; background:#fcfcfc; line-height:40px; margin-top:20px; font-size:14px;}
+.unlike a{ margin:0 8px;}
+.unlike a:hover{ color:#3b9bff}
+/*.others 3*/
+
+
+/*.others 4*/
+.newcoll{font-size:16px; padding:0 20px 20px 20px;}
+.newcoll  a{ margin:0 10px; color:#3b9bff}
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer{ width:100%; height:126px; background: #757575; color:#fff}
+footer .foot{ height:126px;box-sizing:border-box; padding:30px 0;}
+footer .foot  .foot_logo{width:111px;height:34px; margin:5px 18px 0 0; background-position:0 -140px; }
+footer .foot  .foot_logo2{width:96px; height:34px; margin:0 10px 0 0; background-position:-100px -88px;}
+footer .foot a{ color:#fff; display: inline-block}
+footer .foot span{ margin:0 6px;}
+footer .foot .foot_r p{ padding-top:2px; font-size:19px;}
+footer .foot .foot_r p span{ color:#c4f449; font-family:tahoma;}
+

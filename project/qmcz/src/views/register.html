@@ -1,0 +1,50 @@
+<div class="register">
+    <h2>注册</h2>
+    <div class="register-wrap">
+        <div class="register-l">
+            <img src="images/register-l.png" alt="">
+        </div>
+        <div class="register-r">
+            <form action="#" novalidate name="myForm" ng-model="myForm">
+                <p class="input-wrap">
+                    <span class="tip">用户名：</span><input type="text" placeholder="请输入用户名" name="username"
+                                                        ng-model="username" required>
+                    <span ng-show="myForm.username.$dirty && myForm.username.$invalid" class="red">用户名不能为空</span>
+                </p>
+
+                <p class="input-wrap">
+                    <span class="tip">手机号：</span><input type="text" name="phone" ng-model="phone" required
+                                                        ng-pattern="/^1[3578][0-9]{9}$/">
+                    <span ng-show="myForm.phone.$dirty && myForm.phone.$invalid" class="red">
+                    <span ng-show="myForm.phone.$error.required">手机号不能为空</span>
+                    <span ng-show="myForm.phone.$error.pattern">手机号格式不正确</span>
+                </span>
+                </p>
+
+
+                <p class="input-wrap">
+                    <span class="tip">密码：</span><input type="password" name="pwd1" ng-model="pwd1" required
+                                                       ng-minlength="6">
+                    <span ng-show="myForm.pwd1.$dirty && myForm.pwd1.$invalid" class="red">
+                    <span ng-show="myForm.pwd1.$error.required">密码不能为空</span>
+                    <span ng-show="myForm.pwd1.$error.minlength">密码长度不足6位</span>
+                </span>
+                </p>
+
+                <p class="input-wrap">
+                    <span class="tip">确认密码：</span><input type="password" name="pwd2" ng-model="pwd2">
+                    <span ng-show="myForm.pwd2.$dirty && pwd1!=pwd2" class="red">
+                       两次密码不一致
+                    </span>
+                </p>
+                <p>
+                    <input type="checkbox" class="cbx" checked="checked" ng-model="agree"> 阅读并同意 <a href="#">《用户注册服务协议》</a>
+                </p>
+
+
+                <input type="button" value="注册" class="isubmit" ng-click="reg(myForm.$valid && pwd1==pwd2)"
+                       ng-class="{'isubmitbk':myForm.$valid && pwd1==pwd2 && agree}">
+            </form>
+        </div>
+    </div>
+</div>

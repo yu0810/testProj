@@ -1,0 +1,50 @@
+/* CSS Document */
+header{ width:100%; height: 2.32rem; background: url(../images/top_hd.png) no-repeat center;text-align:center; line-height:2.32rem; background-size:100% 2.32rem; z-index:1000}
+.fixed{position:fixed;}
+header h2{ font-size:0.9rem; color:#fff; font-weight:normal}
+a.mes{font-size:1rem; position:absolute; right:1rem; top:0rem; color:#fff}
+
+
+
+
+.i_mes{ width:100%; height:5.8rem; background:url(../images/top_bd.png) no-repeat center;background-size:100% 6.8rem;}
+.i_mes .i_mes_top{ width:100%; padding:1rem 0.75rem 1.5rem; height:4.8rem}
+.i_mes .i_mes_top .i_photo{ width:55%; height:2.3rem; display:block; position:relative; float:left }
+.i_mes .i_mes_top .i_photo img{ width:2.5rem; display:inline-block}
+.i_mes .i_mes_top .i_photo span{font-size:0.7rem; color:#fff; position:absolute; top:0.5rem; left:3rem}
+.i_mes .i_mes_top .cash{ width:45%; height:2.3rem; float:right; text-align:center; position:relative}
+.i_mes .i_mes_top .cash a{ color:#fff}
+.i_mes .i_mes_top .cash span{ display:block; font-size:0.5rem; line-height:1rem}
+.i_mes .i_mes_top .cash a strong{display:block; width:4rem; height:1.3rem; background:#fff; border-radius:0.1rem; line-height:1.3rem; font-size:0.6rem; position:absolute; bottom:0; left:1rem; color:#3b9bff; font-weight:normal}
+
+.con{ width:100%; background:#fff; height:39.04rem}
+.con li{ width:33.3%; height:4.88rem; background:#fff; padding:1rem  1.25rem; position:relative; text-align:center; float:left; overflow:hidden; border-bottom:0.02rem solid #f2f2f2;border-right:0.02rem solid #f2f2f2}
+.con li img{width:1.2rem;margin:0 auto}
+.con li span{ margin-top:0.5rem; display:block; font-size:0.5rem; color:#7d7d7d}
+.con li .exp{width:80%; position: absolute; left:0.5rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; bottom:0.5rem; font-size:0.5rem; color:#b8b8b8}
+.con li .notice{ width:3.5rem; height:1.25rem; line-height:1.7rem; background:#ff7295; font-size:0.5rem; position:absolute; transform:rotate(45deg);  top:-0.15rem; right:-1.3rem; color:#fff; text-align:center; font-style:normal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot_tab_box{width:100%; height:2.15rem; border-top:1px solid #ddd; background:rgba(255,255,255,1); position:fixed; bottom:0; left:0; z-index:1000;}
+.foot_tab_box ul{ width:100%; height:2rem; display:flex;}
+.foot_tab_box ul li{ flex:1;padding-top:0.2rem; }
+.foot_tab_box ul li a{ width:1.6rem; height:1.6rem; display:block; margin:0 auto;font-size:1rem; text-align:center; color:#838c96}
+.foot_tab_box ul li a span{ font-size:0.4rem; display:block}
+
+.foot_tab_box ul li.foot_tab_on a{ color:#fe4979}

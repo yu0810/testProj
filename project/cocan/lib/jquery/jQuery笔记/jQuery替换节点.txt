@@ -1,0 +1,7 @@
+replaceWith()方法的作用是将所有匹配的元素都替换成指定的HTML或者DOM元素。
+例如要将网页中“<p title="选择你最喜欢的水果">你最喜欢的的水果是？</p>”替换成
+“<strong>你最不喜欢的水果是？</strong>”,可以使用如下代码：
+$("p").replaceWith("<strong>你最不喜欢的水果是？</strong>")
+也可以使用replaceAll()方法来实现，该方法与replaceWith()方法的作用相同，只是颠倒了
+replaceWith()操作，如下代码：
+$("<strong>你最不喜欢的水果是？</strong>").replaceAll("p")

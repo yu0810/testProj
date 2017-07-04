@@ -1,0 +1,11 @@
+.css()
+获取：
+.css(propertyName):获取匹配元素集合中的第一个元素的样式属性的计算值
+.css(propertyNames):传递一组数组，返回一个对象结果；
+设置：
+.css(propertyName,value):设置css
+.css(propertyName,function):可以传入一个回调函数，返回取到对应的值进行处理
+.css(properties)：可以传入一个对象，同时设置多个样式格式如下：
+.css({"width":"100px","height":"100px","background":"#ccc"})
+名值对之间用逗号隔开，名和值都需要用引号引起来，名和值之间用冒号分隔。
+注意和attr传入对象的区别

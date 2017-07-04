@@ -1,0 +1,47 @@
+.container{
+    padding: 0;
+}
+.container img{
+    width: 100%;
+}
+.container .title ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom:1px solid #dddddd;
+}
+.container .title ul li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    width: 33%;
+    text-align: center;
+}
+.container .title ul li:nth-child(2n){
+    border-right:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+}
+
+.container .title ul li i{
+    margin-left: 5px;
+}
+.container .list ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .list ul li{
+    padding:2%;
+    width: 50%;
+}
+.container .list ul li span{
+    color: red;
+    font-size: 18px;
+}
+.container .list ul li:nth-child(2n+1){
+    border-right:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+}
+.container .list ul li:nth-child(2n){
+    border-bottom:1px solid #dddddd;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Conan电影详情</title>
+    <script src="lib/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/finder_detail.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/finder_detail.css">
+    <link rel="stylesheet" href="lib/Swiper/dist/css/swiper.min.css">
+    <script src="lib/Swiper/dist/js/swiper.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+    <i class="glyphicon glyphicon-share"></i>
+</div>
+
+<div class="container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073741.68338427_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073751.29097649_900.jpg"/>
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073747.33979177_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073756.54526421_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073800.45778219_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073804.96662227_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073810.23398039_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073815.47645160_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073827.61528795_900.jpg" />
+            </div>
+            <div class="swiper-slide">    <img src="http://img5.mtime.cn/CMS/Gallery/2017/04/21/073821.66588977_900.jpg" />
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
+            paginationType: 'fraction'
+        });
+    </script>
+
+<div class="sd"></div>
+
+
+</div>
+
+
+<div class="footer">
+    <ul>
+        <li><i class="glyphicon glyphicon-home"></i>
+            <p>首页</p></li>
+        <li><i class="glyphicon glyphicon-credit-card"></i>
+            <p>购票</p></li>
+        <li><i class="glyphicon glyphicon-th-large"></i>
+            <p>商城</p></li>
+        <li class="act"><i class="glyphicon glyphicon-globe"></i>
+            <p>发现</p></li>
+        <li><i class="glyphicon glyphicon-user"></i>
+            <p>我的</p></li>
+    </ul>
+</div>
+
+</body>
+</html>
+

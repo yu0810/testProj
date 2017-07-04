@@ -1,0 +1,13 @@
+jQuery对象转换为DOM对象:
+方法1.：
+	 var $cr=$("cr")	//jQuery对象
+	 var cr=$("cr")[0]	//DOM对象
+方法2.：
+	var $cr=$("cr")	//jQuery对象
+	var cr=$("cr").get(0)	//DOM对象
+
+DOM对象转换为JQuery对象：
+	var sc=document.getElementById("cr")	//DOM对象
+	var $cr=$(cr)	//jQuery对象
+
+强调：DOM对象才能使用DOM方法，jQuery对象不可使用DOM的方法

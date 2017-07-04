@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <title>途欢官网-四川途欢医疗健康科技有限公司</title>
+    <style>
+        /*768px --*/
+        /*nav*/
+        /*导航底部边线*/
+        header .navbar-default {
+            border-color: transparent;
+        }
+
+        header #logo {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url(images/logo_M.png) no-repeat;
+            background-size: auto 40px;
+            transition: all 0.6s;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        header .navbar-default .navbar-nav > li > a {
+            color: #333;
+            font-size: 16px;
+            padding: 16px 25px 10px !important;
+            margin: 0 30px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        header .line-top {
+            display: none;
+        }
+
+        header .navbar-nav {
+            margin: 0 -15px;
+        }
+
+        header .navbar-default .navbar-toggle {
+            border: none;
+        }
+
+        /*header .navbar-default .navbar-toggle:hover{
+            background: transparent;
+        }*/
+        header .navbar-default .navbar-toggle, header .navbar-default .navbar-toggle:hover, header .navbar-default .navbar-toggle:focus {
+            background: transparent;
+        }
+
+        header .navbar-default .navbar-toggle .icon-bar {
+            background-color: #3bbe7a;
+            height: 1px;
+
+        }
+
+        header .navbar-default .navbar-toggle .icon-bar + .icon-bar {
+            margin-top: 6px;
+        }
+        .page1, .page2, .page3, .page6, .page7, .page8, .page9 {
+            background: #f8f8f8;
+        }
+
+        .welinian {
+            font-size: 18px !important;
+
+        }
+
+        .container .title-comm .line {
+            border-top: 1px solid #3bbe7a;
+            margin: 20px auto 40px;
+            width: 30px;
+        }
+
+        .container .title-comm {
+            text-align: center;
+            margin: 40px 0 30px;
+
+        }
+        .container .title-comm p {
+            font-size: 12px;
+        }
+
+        .app-none {
+            display: none;
+        }
+
+        .pc-none {
+            display: block;
+        }
+
+        .footer-app {
+            display: block;
+            background: #333;
+            text-align: center;
+            color: rgba(102, 102, 102, .8);
+            padding: 16px 0;
+            overflow: hidden;
+            font-size: 12px;
+        }
+        .page1 .mb40{
+            margin-bottom: 40px;
+        }
+        .page1 .contact-kefu{
+            background: url("images/contact-kefu.svg") no-repeat;
+            background-size: 80px 80px;
+            height: 80px;
+            width: 80px;
+            margin: 0 auto;
+        }
+        .page1 .contactus h4{
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        .page1 .contactus p{
+            margin: 0 0 5px;
+            font-size: 12px;
+        }
+        .page1 .gray-line{
+            width: 100%;
+            border-top: 1px solid rgba(170,170,170,.3);
+        }
+        .address{
+            background: url("images/address.JPG") no-repeat;
+
+            background-size: 150% 150%;
+            background-position: center top;
+            height: 208px;
+            width: auto;
+            overflow: hidden;
+
+        }
+        /********************************************************************/
+        /*768px ++*/
+        @media (min-width: 768px) {
+            .app-none {
+                display: block;
+            }
+
+            .pc-none {
+                display: none;
+            }
+
+            /*nav*/
+            header .navbar-default {
+                background: #fff;
+                /*border-color: transparent;*/
+            }
+
+            header #logo {
+                background: url("images/logo_L.png");
+                width: 128px;
+                height: 79px;
+                background-size: auto 79px;
+                transition: all 0.6s;
+            }
+
+            header .navbar-right {
+                margin-top: 15px;
+            }
+
+            header .navbar-default .navbar-nav > li > a {
+                color: #333;
+                font-size: 16px;
+                padding: 16px 25px 5px !important;
+                margin: 0;
+                border-bottom: 0;
+
+            }
+
+            header .line-top {
+                border-top: 1px solid #3bbe7a;
+                width: 18px;
+                margin: auto;
+                display: block;
+            }
+
+            header .navbar-default .navbar-nav > li.click > a {
+                color: #3bbe7a;
+            }
+
+            header .navbar-default .navbar-nav > li > a:hover {
+                opacity: .8;
+            }
+
+            header .navbar-default .navbar-nav > li > a.downapp {
+                border: 1px solid #3bbe7a;
+                padding: 5px 25px !important;
+                font-size: 14px;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+
+            header .navbar-default .navbar-nav > li > a.downapp:hover {
+                background: #3bbe7a;
+                color: #ffffff;
+            }
+            .welinian {
+                font-size: 24px !important;
+
+            }
+
+            .container .title-comm {
+                text-align: center;
+                margin: 100px 0 80px;
+
+            }
+            .container .title-comm p {
+                font-size: 16px;
+            }
+
+            /*footer*/
+            footer {
+                display: block;
+                background: #333333;
+                padding: 46px 0;
+            }
+
+            footer .footer-text {
+                float: left;
+
+            }
+
+            footer .legal-links {
+                margin-bottom: 10px;
+                overflow: hidden;
+
+            }
+
+            footer .legal-links a {
+                color: rgba(170, 170, 170, .8);
+                float: left;
+                padding-left: 15px;
+                margin-right: 15px;
+                white-space: nowrap;
+            }
+
+            footer .legal-links a:first-child {
+                padding-left: 0;
+            }
+
+            footer .legal-links .bor-line {
+                width: 1px;
+                height: 10px;
+                margin-top: 6px;
+                float: left;
+                border-right: 1px solid rgba(170, 170, 170, .5);
+            }
+
+            footer .legal-state {
+                font-size: 12px;
+                color: rgba(102, 102, 102, .8);
+            }
+
+            footer .footer-erweima {
+                float: right;
+                position: relative;
+                margin-right: 20px;
+            }
+
+            footer .footer-erweima .erweima-pic {
+                position: absolute;
+                bottom: 60px;
+                left: -68px;
+
+            }
+
+            footer .footer-erweima .erweima-pic .popover {
+                width: auto;
+                background: #fff;
+                border-radius: 4px;
+                position: relative;
+                display: block;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+                opacity: 0;
+                transition: all .5s ease-out;
+                top: 0;
+                left: 0;
+                z-index: 1060;
+
+            }
+
+            footer .footer-erweima .erweima-pic .popover .erweima-logo-icon {
+                background: url("images/erweima.svg") no-repeat;
+                background-size: 160px 160px;
+                height: 160px;
+                width: 160px;
+            }
+
+            footer .footer-erweima .weixin-logo-icon {
+                background: url("images/weixin-logo.svg") no-repeat;
+                background-size: 42px 42px;
+                height: 42px;
+                width: 42px;
+                opacity: .8;
+                /*transition:all .5s ease-in;*/
+                margin: 0;
+                cursor: pointer;
+            }
+
+            footer .footer-erweima .weixin-logo-icon:hover {
+                opacity: 1;
+            }
+
+            footer .footer-erweima .shouji-logo-icon {
+                background: url("images/shouji-logo-icon.svg") no-repeat;
+                background-size: 42px 42px;
+                height: 42px;
+                width: 42px;
+                opacity: .8;
+                /*transition:all .5s ease-in;*/
+                margin: 0;
+                cursor: pointer;
+            }
+
+            footer .footer-erweima .shouji-logo-icon:hover {
+                opacity: 1;
+            }
+            .page1 .mb40{
+                margin-bottom: 100px;
+            }
+            .page1 .contact-kefu{
+                background: url("images/contact-kefu.svg") no-repeat;
+                background-size: 110px 110px;
+                height: 110px;
+                width: 110px;
+                margin: 0 auto;
+            }
+            .page1 .contactus h4{
+                margin-bottom: 20px;
+                margin-top: 30px;
+            }
+            .page1 .contactus p{
+
+                font-size: 14px;
+            }
+            .page2 .feedback{
+                margin-bottom: 100px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .page2 .feedback-l{
+                float: left;
+                width: 35.1%;
+            }
+            .page2 .feedback-r{
+                width: 59%;
+                margin-left: 5%;
+                float: left;
+            }
+            .page2 .feedback-r .feedback-submit-con input{
+                width:44.7%;
+                font-size: 12px;
+                padding: 6px 10px;
+                margin-bottom: 17px ;
+
+            }
+            .page2 .feedback-r .feedback-submit-con .inputdiv{
+                border: 1px solid rgba(170,170,170,.5)
+            }
+            .page2 .feedback-r .feedback-submit-con textarea{
+                margin-bottom: 4.7%;
+                height: 136px;
+
+            }
+            .page2 .feedback-r .feedback-submit-con a{
+                transition: all 0.5s ease;
+            }
+            .page2 .feedback-r .feedback-submit-con a:hover{
+                text-decoration: none;
+            }
+            .form-control:focus{
+                border-color: #3bbe7a;
+            }
+            .page2 .feedback-r .feedback-submit-con a.global-btn{
+                width: 120px;
+                height:40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #fff;
+                background: #3bbe7a;
+                border-radius: 2px;
+                text-align: center;
+                display: inline-block;
+            }
+            .address{
+                background: url("images/address.JPG") no-repeat;
+
+                background-size: 100% 100%;
+                background-position: center top;
+                height: 416px;
+
+
+            }
+            /***********************************************************/
+
+        }
+        /*nav end*/
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mymenu">
+                        <i class="icon-bar icon-bar1"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                    </button>
+                    <a href="#" id="logo" class="navbar-brand"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="mymenu">
+                    <ul class="nav navbar-nav navbar-right text-center">
+                        <li><a href="index.html">关于我们</a>
+
+                        </li>
+                        <li ><a href="healthy.html">途欢健康</a>
+                        </li>
+                        <li ><a href="value.html">价值聚焦</a>
+                            </li>
+                        <li class="click"><a href="contact.html">联系我们</a>
+                            <p class="line-top"></p></li>
+                        <li><a href="#" class="downapp">下载途欢健康</a></li>
+                    </ul>
+                </div>g
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="address">
+
+</section>
+<div class="page1">
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinian text-center">联系我们</h3>
+            <p class="line"></p>
+            <p>途欢—让优质医疗资源发挥更广泛价值，
+                让大众获得更便捷可及、优质高效与值得信赖的医疗健康服务</p>
+        </div>
+        <div class="row contactus">
+            <div class="col-xs-12 col-md-4">
+                <div class="text-center mb40" >
+                    <figure class="contact-kefu"></figure>
+                    <div>
+                        <h4>联系客服</h4>
+                        <p class="f12">电话：400-630-9191</p>
+                        <p class="f12">邮箱：service@sctuhuan.com</p>
+                        <p class="f12">工作时间：09：00~18：00（周一到周日）</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="text-center mb40" >
+                    <figure class="contact-kefu"></figure>
+                    <div>
+                        <h4>商务合作</h4>
+                        <p class="f12">联系人：张经理</p>
+                        <p class="f12">电话：028-83226092</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="text-center mb40" >
+                    <figure class="contact-kefu"></figure>
+                    <div>
+                        <h4>公司地址</h4>
+                        <p class="f12">四川省成都市高新区府城大道399号天府新谷7栋</p>
+                        <p class="f12">邮编：610017</p>
+                        <p class="f12">传真：028-83226095</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray-line"></div>
+    </div>
+</div>
+<div class="page2">
+    <div class="container">
+        <div class="app-none">
+            <div class="title-comm">
+                <h3 class="welinian text-center">反馈意见</h3>
+                <p class="line"></p>
+                <p>感谢使用途欢产品和服务</p>
+                <p>您宝贵的建议是途欢前进的动力，我们期待您的反馈和建议</p>
+            </div>
+            <div class="feedback">
+                <div class="feedback-l">
+                    <img src="images/fkyj-cion.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="feedback-r">
+                    <div class="feedback-submit-con">
+                        <input type="text" class="inputdiv form-control"
+                               placeholder="请输入邮箱或电话号码，便于我们联系您">
+                        <textarea id="TxtContent" class="form-control"></textarea>
+                        <a href="#" id="btn-submit" class="global-btn">提交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="app-none">
+    <div class="container">
+        <div class="row">
+            <div class="footer-text">
+                <div class="legal-links">
+                    <a href="">公司动态</a>
+                    <div class="bor-line"></div>
+                    <a href="">加入我们</a>
+                    <div class="bor-line"></div>
+                    <a href="">企业用户</a>
+                    <div class="bor-line"></div>
+                    <a href="">用户使用协议</a>
+                </div>
+                <div class="legal-state">
+                    Copyright © 2016 途欢医疗健康科技有限公司 蜀ICP备15025302号-1
+                </div>
+            </div>
+            <div class="footer-erweima">
+                <div class="erweima-pic">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <div style="padding: 7px">
+                            <figure class="erweima-logo-icon"></figure>
+                        </div>
+                    </div>
+                </div>
+                <figure class="weixin-logo-icon"></figure>
+            </div>
+            <div class="footer-erweima">
+                <div class="erweima-pic">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <div style="padding: 7px">
+                            <figure class="erweima-logo-icon"></figure>
+                        </div>
+                    </div>
+                </div>
+                <figure class="shouji-logo-icon"></figure>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<div class="footer-app pc-none">
+    Copyright © 2016 途欢医疗健康科技有限公司
+</div>
+<script src="../lib/jquery-1.11.1.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    $(function () {
+
+        $("footer .footer-erweima .weixin-logo-icon").hover(function () {
+
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "1"});
+
+        }, function () {
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "0"});
+        });
+        $("footer .footer-erweima .shouji-logo-icon").hover(function () {
+
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "1"});
+
+        }, function () {
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "0"});
+        })
+    })
+</script>
+</body>
+</html>

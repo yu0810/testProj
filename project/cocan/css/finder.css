@@ -1,0 +1,96 @@
+.container .img1{
+    position: relative;
+}
+.container .img1>img{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.container .img1>p{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    bottom: 0rem;
+    padding-top: 0.6rem;
+}
+.container .content{
+    width: 100%;
+    clear: both;
+}
+.container .content div{
+    width: 48%;
+    float: left;
+}
+.container .content .img2{
+    margin-right: 4%;
+}
+.container .content div img{
+    width: 100%;
+    height: 14rem;
+}
+.container .ban .div4{
+    border-bottom:1px solid #d8d8d8;
+}
+.container .ban div{
+    width: 100%;
+}
+.container .ban div h5{
+    font-weight: bolder;
+}
+.container .ban div img{
+    width: 33%;
+    height: 8rem;
+}
+.container .ban .div3{
+    width: 100%;
+    padding:1rem 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+.container .ban .sec{
+    width: 30%;
+    height: 30%;
+}
+.container .ban .div2{
+    width: 64%;
+    margin-left: 5%;
+}
+.container .ban div img:nth-child(2){
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.container .ban span{
+    line-height: 3rem;
+    margin-right: 2rem;
+}
+
+.container .thum ul li{
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.container .thum ul li img{
+    width: 30%;
+    height: 30%;
+    margin-right:4%;
+}
+.container .thum ul li div{
+    width: 64%;
+}
+.container .thum ul li div span{
+    margin-right:2rem;
+    line-height: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+

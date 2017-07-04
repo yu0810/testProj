@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <title>途欢官网-四川途欢医疗健康科技有限公司</title>
+    <style>
+        /*768px --*/
+        /*nav*/
+        /*导航底部边线*/
+        header .navbar-default {
+            border-color: transparent;
+        }
+
+        header #logo {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url(images/logo_M.png) no-repeat;
+            background-size: auto 40px;
+            transition: all 0.6s;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        header .navbar-default .navbar-nav > li > a {
+            color: #333;
+            font-size: 16px;
+            padding: 16px 25px 10px !important;
+            margin: 0 30px;
+            border-bottom: 1px solid #e7e7e7;
+        }
+
+        header .line-top {
+            display: none;
+        }
+
+        header .navbar-nav {
+            margin: 0 -15px;
+        }
+
+        header .navbar-default .navbar-toggle {
+            border: none;
+        }
+
+        /*header .navbar-default .navbar-toggle:hover{
+            background: transparent;
+        }*/
+        header .navbar-default .navbar-toggle, header .navbar-default .navbar-toggle:hover, header .navbar-default .navbar-toggle:focus {
+            background: transparent;
+        }
+
+        header .navbar-default .navbar-toggle .icon-bar {
+            background-color: #3bbe7a;
+            height: 1px;
+
+        }
+
+        header .navbar-default .navbar-toggle .icon-bar + .icon-bar {
+            margin-top: 6px;
+        }
+
+        /*nav end*/
+        /*page1*/
+        .page1 .carousel-inner > .item > img {
+            max-width: 150%;
+            position: relative;
+            left: -15%;
+        }
+
+        /*显示器*/
+        .page1 .carousel-indicators li {
+            width: 20px;
+            height: 2px;
+            background: #000;
+            opacity: .2;
+            margin: 0 6px;
+            cursor: pointer;
+            border: 0;
+            border-radius: 0;
+
+        }
+
+        .page1 .carousel-indicators li.active {
+            background: #3bbe7a;
+            opacity: 1;
+        }
+
+        /*banner 上的字*/
+
+        .page1 .carousel-caption {
+            top: 50%;
+            margin-top: -70px;
+        }
+
+        .page1 .carousel-caption h1 {
+            font-size: 24px;
+
+        }
+
+        .page1 .carousel-caption h3 {
+            font-size: 14px;
+        }
+
+        .page1 .carousel-caption button {
+            width: 160px;
+            height: 44px;
+            background: #3bbe7a;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 2px;
+            color: #fff;
+            border: none;
+            margin: 40px auto;
+        }
+
+        .linh25 {
+            line-height: 20px;
+        }
+
+        /*page2*/
+        .page2, .page3, .page6, .page7, .page8, .page9 {
+            background: #f8f8f8;
+        }
+
+        .welinian {
+            font-size: 18px !important;
+
+        }
+
+        .container .title-comm .line {
+            border-top: 1px solid #3bbe7a;
+            margin: 20px auto 40px;
+            width: 30px;
+        }
+
+        .container .title-comm {
+            text-align: center;
+            margin: 40px 0 30px;
+
+        }
+
+        .app-none {
+            display: none;
+        }
+
+        .pc-none {
+            display: block;
+        }
+
+        .footer-app {
+            display: block;
+            background: #333;
+            text-align: center;
+            color: rgba(102, 102, 102, .8);
+            padding: 16px 0;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        .page3 .title-comm-tuhuan {
+            padding: 0 20px;
+            margin: 30px 0 20px;
+            text-align: center;
+        }
+
+        .page3 .title-comm-tuhuan p {
+            margin-bottom: 10px;
+        }
+
+        .page3 .title-comm-tuhuan .line-tuhuan {
+            margin: 15px auto;
+            width: 40px;
+            border-top: 2px solid #3bbe7a;
+        }
+
+        .page3 .title-comm-tuhuan .tuhuan-text {
+            color: #aaa;
+        }
+
+        .page3 .tuhuan-item-comm {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+
+
+
+        .page3 .zljh-logo-icon, .hzsj-logo-icon, .hzgl-logo-icon {
+            background: url("images/zljh-logo-icon.png") no-repeat;
+            background-size: 43px 43px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-position: center;
+
+        }
+
+        .page3 .hzsj-logo-icon {
+            background: url("images/hzsj-logo-icon.png") no-repeat;
+            background-size: 43px 43px;
+            background-position: center;
+        }
+
+        .page3 .hzgl-logo-icon {
+            background: url("images/hzgl-logo-icon.png") no-repeat;
+            background-size: 43px 43px;
+            background-position: center;
+        }
+
+        .page6 .fuwutixi-global {
+            background: rgba(222, 223, 212, .4);
+            padding: 3.1% 0;
+        }
+
+        .page6 .fuwutixi-imgitem {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .page6 .fuwutixi-imgitem > img {
+            position: relative;
+        }
+
+        .page6 .fuwutixi-imgitem > div {
+            position: relative;
+        }
+
+        .page6 .fuwutixi-imgitem > div img {
+            position: absolute;
+            bottom: 0px;
+            height: 20px;
+        }
+
+        .page6 .fuwutixi-imgitem > div p {
+            position: absolute;
+            bottom: -10px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            left: 1.8%;
+        }
+
+        .page6 .fuwutixi-imgitem > div:last-child img {
+            right: 0;
+        }
+
+        .page6 .fuwutixi-imgitem > div:last-child p {
+            left: auto;
+            right: 1.8%;
+        }
+        .page6 .original-shape{
+            width: 65px;
+            height:65px;
+            line-height: 65px;
+            border-radius: 50%;
+            background: rgba(59,190,122,.95);
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -32.5px;
+            margin-top: -32.5px;
+        }
+        .page7 .foryou-center-row{
+            margin-top: -15px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .page7 .foryou-center{
+            margin-top: 15px;
+            text-align: center;
+        }
+        .page7 .foryou-center p.biaoti{
+            font-size: 18px;
+            padding-top: 13%;
+            color: #333;
+        }
+        .page7 .foryou-center p.line{
+            border-top: 1px solid  #3bbe7a;
+            width: 20px;
+            margin: 15px auto;
+        }
+        .page7 .foryou-center p:last-child{
+            font-size: 12px;
+        }
+        .page8 .qiehuan-slide{
+            background: url("images/shoujibei_icon.jpg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height:450px;
+            margin-top: 30px;
+
+        }
+        .page9 .bs-example-popover{
+            height:159px;
+            padding-bottom: 24px;
+            background: #f9f9f9;
+        }
+        /********************************************************************/
+        /*768px ++*/
+        @media (min-width: 768px) {
+            .app-none {
+                display: block;
+            }
+
+            .pc-none {
+                display: none;
+            }
+
+            /*nav*/
+            header .navbar-default {
+                background: #fff;
+                /*border-color: transparent;*/
+            }
+
+            header #logo {
+                background: url("images/logo_L.png");
+                width: 128px;
+                height: 79px;
+                background-size: auto 79px;
+                transition: all 0.6s;
+            }
+
+            header .navbar-right {
+                margin-top: 15px;
+            }
+
+            header .navbar-default .navbar-nav > li > a {
+                color: #333;
+                font-size: 16px;
+                padding: 16px 25px 5px !important;
+                margin: 0;
+                border-bottom: 0;
+
+            }
+
+            header .line-top {
+                border-top: 1px solid #3bbe7a;
+                width: 18px;
+                margin: auto;
+                display: block;
+            }
+
+            header .navbar-default .navbar-nav > li.click > a {
+                color: #3bbe7a;
+            }
+
+            header .navbar-default .navbar-nav > li > a:hover {
+                opacity: .8;
+            }
+
+            header .navbar-default .navbar-nav > li > a.downapp {
+                border: 1px solid #3bbe7a;
+                padding: 5px 25px !important;
+                font-size: 14px;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+
+            header .navbar-default .navbar-nav > li > a.downapp:hover {
+                background: #3bbe7a;
+                color: #ffffff;
+            }
+
+            /*nav end*/
+            /*page1*/
+            .page1 .carousel-caption h1 {
+                font-size: 54px;
+            }
+
+            .page1 .carousel-caption h3 {
+                font-size: 24px;
+            }
+
+            .linh25 {
+                line-height: 25px !important;
+                font-size: 14px;
+            }
+
+            /*2*/
+            .welinian {
+                font-size: 24px !important;
+
+            }
+
+            .container .title-comm {
+                text-align: center;
+                margin: 100px 0 80px;
+
+            }
+
+            /*footer*/
+            footer {
+                display: block;
+                background: #333333;
+                padding: 46px 0;
+            }
+
+            footer .footer-text {
+                float: left;
+
+            }
+
+            footer .legal-links {
+                margin-bottom: 10px;
+                overflow: hidden;
+
+            }
+
+            footer .legal-links a {
+                color: rgba(170, 170, 170, .8);
+                float: left;
+                padding-left: 15px;
+                margin-right: 15px;
+                white-space: nowrap;
+            }
+
+            footer .legal-links a:first-child {
+                padding-left: 0;
+            }
+
+            footer .legal-links .bor-line {
+                width: 1px;
+                height: 10px;
+                margin-top: 6px;
+                float: left;
+                border-right: 1px solid rgba(170, 170, 170, .5);
+            }
+
+            footer .legal-state {
+                font-size: 12px;
+                color: rgba(102, 102, 102, .8);
+            }
+
+            footer .footer-erweima {
+                float: right;
+                position: relative;
+                margin-right: 20px;
+            }
+
+            footer .footer-erweima .erweima-pic {
+                position: absolute;
+                bottom: 60px;
+                left: -68px;
+
+            }
+
+            footer .footer-erweima .erweima-pic .popover {
+                width: auto;
+                background: #fff;
+                border-radius: 4px;
+                position: relative;
+                display: block;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+                opacity: 0;
+                transition: all .5s ease-out;
+                top: 0;
+                left: 0;
+                z-index: 1060;
+
+            }
+
+            footer .footer-erweima .erweima-pic .popover .erweima-logo-icon {
+                background: url("images/erweima.svg") no-repeat;
+                background-size: 160px 160px;
+                height: 160px;
+                width: 160px;
+            }
+
+            footer .footer-erweima .weixin-logo-icon {
+                background: url("images/weixin-logo.svg") no-repeat;
+                background-size: 42px 42px;
+                height: 42px;
+                width: 42px;
+                opacity: .8;
+                /*transition:all .5s ease-in;*/
+                margin: 0;
+                cursor: pointer;
+            }
+
+            footer .footer-erweima .weixin-logo-icon:hover {
+                opacity: 1;
+            }
+
+            footer .footer-erweima .shouji-logo-icon {
+                background: url("images/shouji-logo-icon.svg") no-repeat;
+                background-size: 42px 42px;
+                height: 42px;
+                width: 42px;
+                opacity: .8;
+                /*transition:all .5s ease-in;*/
+                margin: 0;
+                cursor: pointer;
+            }
+
+            footer .footer-erweima .shouji-logo-icon:hover {
+                opacity: 1;
+            }
+
+            .page3 .title-comm-tuhuan {
+                font-size: 16px;
+                margin: 100px 0 80px;
+
+            }
+
+            .page3 .title-comm-tuhuan p {
+                margin: 0;
+            }
+
+            .page3 .title-comm-tuhuan .mb8 {
+                margin-bottom: 8px;
+            }
+
+            .page3 .title-comm-tuhuan .line-tuhuan {
+                margin: 30px auto 26px;
+                width: 80px;
+
+            }
+
+            .page3 .zljh-logo-icon {
+
+                background-size: 70px 70px;
+
+            }
+
+            .page3 .hzsj-logo-icon {
+
+                background-size: 70px 70px;
+
+            }
+
+            .page3 .hzgl-logo-icon {
+
+                background-size: 70px 70px;
+
+            }
+
+            .page6 .fuwutixi-imgitem > div p {
+
+                bottom: 0;
+                font-size: 16px;
+
+            }
+
+            .page6 .fuwutixi-imgitem > div img {
+
+                height: 45px;
+            }
+            .page6 .original-shape{
+                width: 150px;
+                height:150px;
+                line-height: 150px;
+                margin-top: -75px;
+                margin-left: -75px;
+                top: 50%;
+                left: 50%;
+            }
+            .page7 .foryou-center-row{
+
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            .page7 .foryou-center p.line{
+                border-top: 2px solid  #3bbe7a;
+                width: 30px;
+
+            }
+            .page8 .qiehuan-slide{
+
+                height:660px;
+                margin-top: 98px;
+
+            }
+            .page9 .bs-example-popover {
+                height: 207px;
+            }
+
+            /***********************************************************/
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mymenu">
+                        <i class="icon-bar icon-bar1"></i>
+                        <i class="icon-bar"></i>
+                        <i class="icon-bar"></i>
+                    </button>
+                    <a href="#" id="logo" class="navbar-brand"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="mymenu">
+                    <ul class="nav navbar-nav navbar-right text-center">
+                        <li><a href="index.html">关于我们</a>
+
+                        </li>
+                        <li class="click"><a href="healthy.html">途欢健康</a>
+                            <p class="line-top"></p></li>
+                        <li><a href="value.html">价值聚焦</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="#" class="downapp">下载途欢健康</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="page1">
+    <div id="myslide" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myslide" data-slide-to="0" class="active"></li>
+            <li data-target="#myslide" data-slide-to="1"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+
+                <img src="images/health-banner1.jpg" alt="..." class="img-responsive">
+                <div class="carousel-caption">
+                    <h1 class="wow fadeInDown">科技助力医疗创新，实现更高协同价值同行
+                    </h1>
+                    <h3 class="wow fadeInDown">Technology that enables care</h3>
+                    <button class="wow fadeInUp app-none">开启健康人生</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/health-banner2.jpg" alt="..." class="img-responsive">
+                <div class="carousel-caption">
+                    <h1 class="wow fadeInDown">选择途欢，拥有更具连续性的医疗健康服务<br/>
+                        获得更积极的健康成果
+                    </h1>
+                    <h3 class="wow fadeInDown"> Choose us， Better care， Better health</h3>
+                    <button class="wow fadeInUp app-none">开启健康人生</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myslide" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myslide" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+</div>
+<div class="page2">
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinian text-center">以专业维护您的健康</h3>
+            <p class="line"></p>
+            <p>途欢希冀于用专业的力量温情传递健康的意义，
+                用医学的理念与技术帮助大众更科学的维护健康</p>
+        </div>
+    </div>
+
+</div>
+<div class="page3">
+    <div class="container">
+        <div class="row">
+            <div class="title-comm-tuhuan">
+                <p class="mb8">途欢健康，协同三甲医院医生，依据您的近期体检报告及日常情况</p>
+                <p>面对面评估您的健康状况及风险，制定健康（诊疗）计划</p>
+                <p class="line-tuhuan"></p>
+                <p class="tuhuan-text">既往，只体检，体检结果无人管</p>
+            </div>
+            <div class="tuhuan-item-comm">
+                <div class="col-xs-6" style="padding: 0">
+                    <img src="images/tuhuan1_l2x.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-6" style="padding: 0">
+                    <img src="images/tuhuan1_r2x.jpg" alt="" class="img-responsive">
+                </div>
+                <figure class="zljh-logo-icon"></figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!--page4-->
+<div class="page3">
+    <div class="container">
+        <div class="row">
+            <div class="title-comm-tuhuan">
+                <p class="mb8">途欢健康，专业、系统、持续的记录您的健康</p>
+                <p>包含历史体检数据、历史诊疗与日常监控随访数据等，成为您就诊时，医生诊疗决策最有力协助</p>
+                <p class="line-tuhuan"></p>
+                <p class="tuhuan-text">记录随手丢，病例找不到，医嘱记不住</p>
+            </div>
+            <div class="tuhuan-item-comm">
+                <div class="col-xs-6" style="padding: 0">
+                    <img src="images/tuhuan3_l2x.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-6" style="padding: 0">
+                    <img src="images/tuhuan4_r2x.jpg" alt="" class="img-responsive">
+                </div>
+                <figure class="hzsj-logo-icon"></figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!--page4 end-->
+<!--page5-->
+<div class="page3">
+    <div class="container">
+        <div class="row">
+            <div class="title-comm-tuhuan">
+                <p class="mb8">专业临床医学背景的途欢医生助理仿佛您的家人，时刻关注着您的健康</p>
+                <p>通过主动持续的干预与管理，为您提供个体化的健康服务</p>
+                <p class="line-tuhuan"></p>
+                <p class="tuhuan-text">对健康关注，却因缺少专业知识而束手无策</p>
+            </div>
+            <div class="tuhuan-item-comm">
+                <div class="col-xs-6" style="padding: 0">
+                    <img src="images/tuhuan5_l2x.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-6" style="padding: 0">
+                    <img src="images/tuhuan6_r2x.jpg" alt="" class="img-responsive">
+                </div>
+                <figure class="hzgl-logo-icon"></figure>
+            </div>
+        </div>
+    </div>
+</div>
+<!--page5 end-->
+<div class="page6">
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinian text-center">科技助力医疗创新,实现更高协同价值</h3>
+            <p class="line"></p>
+            <p>在途欢医疗健康管理平台的支持下</p>
+            <p>以社区医院家庭医生及途欢个人专属健康顾问为中心，集合三甲医院顶尖专家、权威专科医生的“责任医疗团队”</p>
+            <p>共同为您和家人提供高度协同的主动管理式医疗健康服务：日常健康管理，健康风险评估与风险因素管理，医疗服务连接等</p>
+
+        </div>
+    </div>
+    <div class="fuwutixi-global">
+        <div class="container">
+            <div class="row" style="position: relative;">
+                <div class="fuwutixi-imgitem">
+                    <img src="images/fuwutixi-1.jpg" alt="" class="img-responsive">
+                    <div>
+                        <img src="images/tuhuanjkmengc_l.png" alt="" class="img-responsive">
+                        <p>途欢医疗团队</p>
+                    </div>
+                    <div>
+                        <img src="images/tuhuanjkmengc_r.png" alt="" class="img-responsive">
+                        <p>社区医院医生</p>
+                    </div>
+                </div>
+                <div class="fuwutixi-imgitem" style="margin-top: 2%">
+                    <img src="images/fuwutixi-2.jpg" alt="" class="img-responsive">
+                    <div>
+                        <img src="images/tuhuanjkmengc_l.png" alt="" class="img-responsive">
+                        <p>三甲专科医生</p>
+                    </div>
+                    <div>
+                        <img src="images/tuhuanjkmengc_r.png" alt="" class="img-responsive">
+                        <p>途欢医疗健康管理系统</p>
+                    </div>
+                </div>
+                <div class="original-shape">
+                    服务体系
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page7">
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinian text-center">以您为中心,更便捷的健康体验</h3>
+            <p class="line"></p>
+        </div>
+        <div class="row">
+            <div class="foryou-center-row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="images/center-img-01.jpg" alt="" class="img-responsive">
+                        <p class="biaoti">更了解您</p>
+                        <p class="line"></p>
+                        <p>为您建立的个人电子健康档案，全面记录您的日常健康数据、医疗记录，是医生更精准诊疗的基础</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="images/center-img-02.jpg" alt="" class="img-responsive">
+                        <p class="biaoti">时刻关注您</p>
+                        <p class="line"></p>
+                        <p>将人工智能运用于健康数据的智能检测，持续、动态的管理您的健康数据，更早发现潜在健康风险</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="images/center-img-03.jpg" alt="" class="img-responsive">
+                        <p class="biaoti">离您更近</p>
+                        <p class="line"></p>
+                        <p>与熟悉您健康的途欢大夫、家庭医生、专属健康顾问进行在线咨询，随时随地获得更便捷的健康服务</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="images/center-img-04.jpg" alt="" class="img-responsive">
+                        <p class="biaoti">家人般守护您</p>
+                        <p class="line"></p>
+                        <p>健康顾问与家庭医生为您预判并连接您所适需医疗方案，帮助您获得更精准、更有效率的医疗服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page8">
+    <div class="qiehuan-slide">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+<div class="page9">
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinian text-center">用户的鼓励</h3>
+            <p class="line"></p>
+            <p>途欢健康、协同于现有的医疗服务体系，致力于构建更精准的医疗保健模式</p>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="bs-example-popover">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <h3 class="popover-title-touxiang"><img src="images/1-160513163232312.jpg" alt=""></h3>
+                        <div class="popover-content">
+                            <p class="popover-content-text">我长期坐办公室，吃油炸食品，在途欢进行综合健康评估时，
+                                发现已有糖尿病前期症状，在医生助理的指导下，我在调节饮食和运动中逐渐恢复。</p>
+                        </div>
+                        <div class="popover-content-tag">
+                            <span class="bingzhong">糖尿病前期</span>
+                            <div class="position-address">
+                                <figure class="position-icon"></figure>
+                                <span>四川成都市</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<footer class="app-none">
+    <div class="container">
+        <div class="row">
+            <div class="footer-text">
+                <div class="legal-links">
+                    <a href="">公司动态</a>
+                    <div class="bor-line"></div>
+                    <a href="">加入我们</a>
+                    <div class="bor-line"></div>
+                    <a href="">企业用户</a>
+                    <div class="bor-line"></div>
+                    <a href="">用户使用协议</a>
+                </div>
+                <div class="legal-state">
+                    Copyright © 2016 途欢医疗健康科技有限公司 蜀ICP备15025302号-1
+                </div>
+            </div>
+            <div class="footer-erweima">
+                <div class="erweima-pic">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <div style="padding: 7px">
+                            <figure class="erweima-logo-icon"></figure>
+                        </div>
+                    </div>
+                </div>
+                <figure class="weixin-logo-icon"></figure>
+            </div>
+            <div class="footer-erweima">
+                <div class="erweima-pic">
+                    <div class="popover top">
+                        <div class="arrow"></div>
+                        <div style="padding: 7px">
+                            <figure class="erweima-logo-icon"></figure>
+                        </div>
+                    </div>
+                </div>
+                <figure class="shouji-logo-icon"></figure>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<div class="footer-app pc-none">
+    Copyright © 2016 途欢医疗健康科技有限公司
+</div>
+
+
+<script src="../lib/jquery-1.11.1.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script>
+    $(function () {
+
+        $("footer .footer-erweima .weixin-logo-icon").hover(function () {
+
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "1"});
+
+        }, function () {
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "0"});
+        });
+        $("footer .footer-erweima .shouji-logo-icon").hover(function () {
+
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "1"});
+
+        }, function () {
+            $(this).parent().children(".erweima-pic").children().css({"opacity": "0"});
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>分期乐-年轻人信用消费平台</title>
+    <meta name="keywords" content="分期乐,分期付款,年轻人分期,分期购物,电脑分期付款,手机分期付款,相机分期付款,fenqile" />
+	<meta name="description" content="分期乐是国内面向年轻人提供分期消费的金融服务平台，购买商品首付月供全网最低，还款超低手续费，支持网银、支付宝、财付通支付，可使用身份证办理分期；平台提供的手机、电脑、相机等商品均来自京东、易迅直供，100%正品行货。" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+   	<script src="js/jquery-1.8.3.min.js"></script>
+   
+</head>
+
+<body>
+	<section id="topbar">
+    	<div class="topbar ww">
+   	    <img src="images/logo.png" width="120" height="38">
+        <p>欢迎注册</p>
+        <a href="login.html" class="reg">已有账号 立即登录</a>
+        </div>
+    </section>
+    
+    
+    <!--register_main-->
+<div id="register_main">
+	<div class="register_main ww">
+    	<form>
+        	<div class="pasform">
+            	<ul>
+                	<li><label for="uNum">手机号码</label>
+                    <input type="text" id="uNum" name="" placeholder="请输入有效的手机号">
+                    <p class="fault1">手机号码长度至少为11位</p>
+                    <p class="fault2">手机号码格式错误</p></li>
+                    
+                    <li><label for="uMes">短信验证码</label>
+                    <input type="text" id="uMes" name="" placeholder="请输入验证码">
+                    <em class="get">获取验证码</em>
+                    <p class="fault3">验证码错误</p>
+                    </li>
+                    
+                    <li><label for="uPsw">登录密码</label>
+                    <input type="text" id="uPsw" name="" placeholder="请输入6-16位字符或数字">
+                    <p class="fault4">密码长度为6-11位字符或数字</p>
+                    </li>
+                    
+                    <li class="password1"><label for="uPass">确认密码</label>
+                    <input type="text" id="uPass" name="" placeholder="确认登录密码">
+                    <p class="fault5">与登录密码不一致</p>
+                    </li>
+                    
+                    <li><label for="uPay">交易密码</label>
+                    <input type="text" id="uPay" name="" placeholder="请输入交易密码,与登录密码不同">
+                    <p class="fault6">密码为6位数字组成</p>
+                    </li>
+                    
+                    <li class="password2"><label for="uSafe">确认密码</label>
+                    <input type="text" id="uSafe" name="" placeholder="确认交易密码">
+                    <p class="fault7">与交易密码不一致</p>
+                    </li>
+                    
+                    <li><label for="uSub">&nbsp;</label>
+                    <input  type="submit" id="uSub" name="" value="同意协议并注册">
+                    <p class="fault7">与交易密码不一致</p>
+                    </li>
+                    
+                    <li><label for="ckb">&nbsp;</label>
+                    <input type="checkbox" id="ckb"  checked="checked">
+                    <span class="arg">同意<a href="" class="xy">《分期乐注册协议》</a></span>
+                    
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <script type="text/javascript">
+        	$( function(){
+				$("#uPsw").click( function(){
+					$(".password1").show();
+					$(".password2").hide();
+					});
+				$("#uPay").click( function(){
+					$(".password2").show();
+					
+					});
+				
+			});
+        </script>
+   <!-- <form method="post" action="index.php" onsubmit=" return checkForm()">
+		<table>
+			<tr>
+				<td style="width: 15%"><label for="uName">用户名：</label></td>
+				<td style="width: 40%"><input type="text" id="uName" name=""></td>
+				<td><span id="uName_txt"></span></td>
+			</tr>
+			<tr>
+				<td><label for="pwd1">密码：</label></td>
+				<td><input type="password" id="pwd1" name=""></td>
+				<td><span id="pwd1_txt"></span></td>
+			</tr>
+			<tr>
+				<td><label for="pwd2">确认密码：</label></td>
+				<td><input type="password" id="pwd2" name=""></td>
+				<td><span id="pwd2_txt"></span></td>
+			</tr>
+			<tr>
+				<td><label for="tel">手机号：</label></td>
+				<td><input type="text" id="tel" name=""></td>
+				<td><span id="tel_txt"></span></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="cbx" name="" style="margin-left:50px; margin-top: 10px"></td>
+				<td colspan="2">同意****************协议</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center; padding-top:  20px;">
+				<input type="submit" id="btnSub"  value="提交" style="text-align: center; width: 70px;height: 25px; ">
+				</td>
+			</tr>
+		</table>
+	</form>-->
+    </div>	
+</div>
+<!--register_main end-->
+
+<!--footer -->
+<footer>
+	<div class="foot ww">
+    	<div class="foot_l fl">
+        	<a href="" class="foot_logo _head"></a>
+            <a href="" class="foot_logo2 _head"></a>
+        </div>
+        <div class="foot_l fl">
+        	<a href="">关于我们</a>
+            <span>|</span>
+            <a href="">卖家入驻</a>
+            <span>|</span>
+            <a href="">我要举报</a>
+            <span>|</span>
+            <a href="">加入我们</a>
+            <span>|</span>
+            <a href="">上门自提</a>
+           <br/>
+           <a href="">粤ICP备14041530号-1</a>&nbsp;&nbsp;
+           <a href="">粤ICP备B2-20140262</a>&nbsp;&nbsp;<br/>
+           <a href="">食品流通许可证JY14403050095815</a>&nbsp;&nbsp;
+           <a href="">粤网文[2017]1979-251号</a>
+           <br/>
+           Copyright © 2013-2017 Fenqile All Rights Reserved <br/>深圳市分期乐网络科技有限公司 版权所有
+        </div>
+        <div class="foot_r fr">
+        	<div class="fr">
+            	<a href=""><img src="images/govIcon.gif" width="41" height="56"></a>
+            </div>
+          <p class="fr">客服电话：<span>400-005-9151</span></p>
+      </div>
+    </div>
+</footer>
+<!--footer  end-->
+</body>
+</html>

@@ -1,0 +1,1053 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>分期乐触屏版-年轻人信用消费平台</title>
+<meta name="keywords" content="分期乐,分期付款,年轻人分期,分期购物,电脑分期付款,手机分期付款,相机分期付款,fenqile" />
+<meta name="description" content="分期乐是国内面向年轻人提供分期消费的金融服务平台，购买商品首付月供全网最低，还款超低手续费，支持网银、支付宝、财付通支付，可使用身份证办理分期；平台提供的手机、电脑、相机等商品均来自京东、易迅直供，100%正品行货。" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/m_base.css">
+<link rel="stylesheet" type="text/css" href="css/m_index.css">
+<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+</head>
+
+<body>
+<!--header-->	
+<header class="m_header">
+	
+    <form action="#"  method="post">
+    	<div class="header_search">
+        	<input type="search" placeholder="搜索您感兴趣的商品">
+            <a href="cart.html" class="iconfont shopcar_btn" target="_blank" >&#xe6f0;</a>
+            <a href="#" class="iconfont message_btn" >&#xe65b;</a>
+            <a href="#" class="iconfont search_btn" >&#xe8e0;</a>
+            <a href="classify.html" class="iconfont classify_btn" >&#xe651;</a>
+       </div>
+       <!--<div class="header_nav">
+       		<a href="classify.html" class="iconfont classify_btn" >&#xe651;</a>
+       		<ul>
+            	<li class="on"><a href="">推荐</a></li>
+                <li><a href="">手机</a></li>
+                <li><a href="">电脑</a></li>
+                <li><a href="">数码</a></li>
+                <li><a href="">充值</a></li>
+                <li><a href="">美妆</a></li>
+                <li><a href="">运动户外</a></li>
+                <li><a href="">家电</a></li>
+                <li><a href="">名表</a></li>
+               <li><a href="">珠宝首饰</a></li>
+                <li><a href="">服饰鞋帽</a></li>
+                <li><a href="">箱品礼包</a></li>
+            </ul>
+       </div>-->
+       <div id="topNav" class="swiper-container">
+       		
+            <div class="swiper-wrapper">
+                <div class="swiper-slide active"><a href="index.html">推荐</a></div>
+                <div class="swiper-slide"><a href="">手机</a></div>
+                <div class="swiper-slide"><a href="">电脑</a></div>
+                <div class="swiper-slide"><a href="">数码</a></div>
+                <div class="swiper-slide"><a href="">充值</a></div>
+                <div class="swiper-slide"><a href="">美妆</a></div>
+                <div class="swiper-slide"><a href="">运动户外</a></div>
+                <div class="swiper-slide"><a href="">家电</a></div>
+                <div class="swiper-slide"><a href="">名表</a></div>
+                <div class="swiper-slide"><a href="">珠宝</a></div>
+                <div class="swiper-slide"><a href="">服饰</a></div>
+                <div class="swiper-slide"><a href="">箱包</a></div>
+                <div class="swiper-slide"></div>
+          </div>
+	 </div>
+<script type="text/javascript">
+var mySwiper = new Swiper('#topNav', {
+	freeMode: true,
+	freeModeMomentumRatio: 0.5,
+	slidesPerView: 'auto',
+
+});
+
+swiperWidth = mySwiper.container[0].clientWidth
+maxTranslate = mySwiper.maxTranslate();
+maxWidth = -maxTranslate + swiperWidth / 2
+
+$(".swiper-container").on('touchstart', function(e) {
+	e.preventDefault()
+})
+
+mySwiper.on('tap', function(swiper, e) {
+
+	e.preventDefault()
+
+	slide = swiper.slides[swiper.clickedIndex]
+	slideLeft = slide.offsetLeft
+	slideWidth = slide.clientWidth
+	slideCenter = slideLeft + slideWidth / 2
+	// 被点击slide的中心点
+
+	mySwiper.setWrapperTransition(300)
+
+	if (slideCenter < swiperWidth / 2) {
+		
+		mySwiper.setWrapperTranslate(0)
+
+	} else if (slideCenter > maxWidth) {
+		
+		mySwiper.setWrapperTranslate(maxTranslate)
+
+	} else {
+
+		nowTlanslate = slideCenter - swiperWidth / 2
+
+		mySwiper.setWrapperTranslate(-nowTlanslate)
+
+	}
+
+	$("#topNav  .active").removeClass('active')
+
+	$("#topNav .swiper-slide").eq(swiper.clickedIndex).addClass('active')
+
+})
+</script>
+
+    
+    </form>
+</header>
+<!--header end-->	
+<div class="m_layout">
+<!--banner-->
+  <div class="banner">
+	  <div id="slideBox" class="slideBox">
+
+				<div class="bd">
+					<ul>
+							<li><a class="pic" href="#"><img src="images/banner1.jpg" /></a></li>
+							<li><a class="pic" href="#"><img src="images/banner2.jpg"/></a></li>
+							<li><a class="pic" href="#"><img src="images/banner3.jpg"/></a></li>
+							<li><a class="pic" href="#"><img src="images/banner4.png"/></a></li>
+                            <li><a class="pic" href="#"><img src="images/banner5.jpg" /></a></li>
+							<li><a class="pic" href="#"><img src="images/banner6.jpg"/></a></li>
+							<li><a class="pic" href="#"><img src="images/banner7.png"/></a></li>
+							<li><a class="pic" href="#"><img src="images/banner8.jpg"/></a></li>
+					</ul>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#slideBox",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPage:true,//自动分页
+					autoPlay:true //自动播放
+				});
+			</script>
+    </div>
+   <!--banner end-->
+   <!--banner_wrap--> 
+   <div class="banner_wrap">
+   		<!--滑动-->
+	 <div id="picScroll" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/banner_wrap1.png"></a></li>
+							<li><a href="#"><img src="images/banner_wrap2.png"></a></li>
+							<li><a href="#"><img src="images/banner_wrap3.png"></a></li>
+                            <li><a href="#"><img src="images/banner_wrap4.jpg"></a></li>
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/banner_wrap5.png"></a></li>
+                            <li><a href="#"><img src="images/banner_wrap2.png"></a></li>
+							<li><a href="#"><img src="images/banner_wrap3.png"></a></li>
+				  		</ul>
+		 		</div>
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+		 	
+				TouchSlide({ 
+					slideCell:"#picScroll",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		
+		</script>
+			
+  </div>
+  
+  <!--banner_wrap end--> 
+    
+   <section class="floor_wrap">
+   <!--seconds_kill-->
+   		<div class="seconds_kill">
+        	<!--m_time_box-->
+ 			<div class="m_time_box">
+                <h2 class="tit">限时秒杀</h2>
+                <span  class="time_num"><b id="bot-box1">距离本场结束 </b><i id="hours">00</i> : <i id="minutes">00</i> : <i id="seconds">00</i></span>
+            </div>
+        <!--m_time_box end-->
+           
+        <!--m_goods_box -->    
+        <div class="m_goods_box">
+        	<!--滑动-->
+   		<div id="picScroll1" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/seconds_kill1.jpg">
+                            	<div class="text">
+                                	<p>¥2599 <del>¥2888</del></p>
+                                    <span>月供 ¥123.96起</span>
+                                </div>
+                            </a></li>
+							<li><a href="#"><img src="images/seconds_kill2.jpg">
+                            	<div class="text">
+                                	<p>¥3400 <del>¥3600</del></p>
+                                    <span>月供 ¥162.16起</span>
+                                </div></a></li>
+							<li><a href="#"><img src="images/seconds_kill3.jpg">
+                            	<div class="text">
+                                	<p>¥585 <del>¥685</del></p>
+                                    <span>月供 ¥27.96起</span>
+                                </div></a></li>
+                           
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/seconds_kill4.jpg">
+                            	<div class="text">
+                                	<p>¥299 <del>¥299</del></p>
+                                    <span>月供 ¥21.74起</span>
+                                </div></a></li>
+                            <li><a href="#"><img src="images/seconds_kill5.jpg">
+                            	<div class="text">
+                                	<p>¥18 <del>¥45</del></p>
+                                    <span>月供 ¥0.86起</span>
+                                </div></a></li>
+							<li><a href="#"><img src="images/seconds_kill6.jpg">
+                            	<div class="text">
+                                	<p>¥55 <del>¥78</del></p>
+                                    <span>月供 ¥2.63起</span>
+                                </div></a></li>
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/seconds_kill7.jpg">
+                            	<div class="text">
+                                	<p>¥299 <del>¥299</del></p>
+                                    <span>月供 ¥21.74起</span>
+                                </div></a></li>
+                            <li><a href="#"><img src="images/seconds_kill8.jpg">
+                            	<div class="text">
+                                	<p>¥18 <del>¥45</del></p>
+                                    <span>月供 ¥0.86起</span>
+                                </div></a></li>
+						  <li class="more"><a href="#">
+                       	  <h2>MORE</h2>
+                          <p>查看更多</p>
+                          </a></li>
+				  		</ul>
+		 		</div>
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+		 
+				TouchSlide({ 
+					slideCell:"#picScroll1",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+	
+		</script>
+        
+        </div>
+        <!--m_goods_box end-->   
+        </div>
+        <!--seconds_kill end-->
+   <script type="text/javascript">
+	var endTime = new Date("2017/5/4,09:00:00");
+	showTime();
+
+	function showTime(){
+		var t;
+		var now = new Date();
+		var diff = (endTime.getTime() - now.getTime())/1000;
+
+		if(diff <= 0){
+			var o = document.getElementById("bot-box");
+			o.style.display="block";
+			//o.style.background="url(images/flash_end.png) no-repeat";
+			o.innerHTML = "秒杀已结束!";
+			clearTimeout(t);
+		}else{
+			var h = parseInt(diff / (60 * 60));
+			var m = parseInt((diff / 60) % 60); //计算剩余分钟
+			var s = parseInt(diff % 60); //计算剩余秒
+
+			if(h < 10){
+				h = "0" + h;
+			}
+			if(m < 10){
+				m = "0" + m;
+			}
+			if(s < 10){
+				s = "0" + s;
+			}
+
+			document.getElementById("hours").innerHTML = h;
+			document.getElementById("minutes").innerHTML = m;
+			document.getElementById("seconds").innerHTML = s;
+
+			t = setTimeout(showTime, 1000);
+		}
+	}
+</script>
+   </section>
+   <section class="floor_wrap">
+   		<div class="title">精选活动</div>
+        <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act1.png"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll2" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/iPhone1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/iPhone2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/iPhone3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/iPhone4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/iPhone3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll2",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act2.jpg"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll3" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/cam1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/cam2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/cam3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/cam4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/cam3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll3",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act3.jpg"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll4" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/game1.png">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/game2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/game3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/game4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/game5.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll4",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act4.jpg"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll5" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/vip1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/vip2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/vip3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/vip4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/vip5.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll5",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act5.jpg"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll6" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/lip1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/lip2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/lip3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/lip4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/lip5.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll6",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act6.jpg"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll7" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/sport1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/sport2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/sport3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/sport4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/sport5.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll7",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="show_pic"><img src="images/act7.jpg"></div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll8" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/make1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/make2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/make3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/make4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/make5.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll8",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+  </section>
+  
+   <section class="floor_wrap">
+   		<div class="title">品牌热卖</div>
+        <div class="show_pic pic"><img src="images/danpin1.jpg"></div>
+        <div class="show_pic pic"><img src="images/danpin2.jpg"></div>
+        <div class="show_pic pic"><img src="images/danpin3.jpg"></div>
+   </section>
+   <section class="floor_wrap">
+   		<div class="title">单品推荐</div>
+        <div class="show_pic pic"><img src="images/brand1.jpg"></div>
+        <div class="show_pic pic"><img src="images/brand2.jpg"></div>
+        <div class="show_pic pic"><img src="images/brand3.jpg"></div>
+   </section>
+    <section class="floor_wrap">
+   		<div class="title">精选好店</div>
+         <!--goods-->
+   		<div class="goods">
+            	<div class="store">
+                    
+                    	<img src="images/store1.jpg">
+                   
+                    <div class="store_name">
+                    	<p>欧时手表专营店</p>
+                        <span>瑞士名表，轻奢生活</span>
+                    </div>
+                    <div class="store_shop">
+                    	<p>逛一下</p>
+                        
+                    </div>
+                
+                 </div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll9" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/goods1.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/goods2.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/goods3.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/goods4.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/goods5.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll9",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+         <!--goods-->
+   		<div class="goods">
+            	<div class="store">
+                    
+                    	<img src="images/store2.jpg">
+                   
+                    <div class="store_name">
+                    	<p>迅淘美购专营店</p>
+                        <span>正品保证 假一陪十</span>
+                    </div>
+                    <div class="store_shop">
+                    	<p>逛一下</p>
+                        
+                    </div>
+                
+                 </div>
+                <!--show_goods-->
+            	<div class="show_goods">
+                <!--滑动-->
+	 			<div id="picScroll10" class="picScroll">
+				<div class="hd">
+						<ul></ul>
+				</div>
+				<div class="bd">
+						<ul>
+							<li><a href="#"><img src="images/goods11.jpg">
+                            	<p>Apple iPhone 7 国行正品 4G智能手机 </p>
+                                <span>¥4799</span>
+                                <i><em>免息</em>月供 ¥162起</i>
+                            </a></li>
+							<li><a href="#"><img src="images/goods12.jpg">
+                            	<p>iPhone 7 Plus 苹果新品 全网通4G手机</p>
+                                <span>¥5699</span>
+                                <i><em>免息</em>月供 ¥192起</i>
+                            </a></li>
+							
+						</ul>
+
+						<ul>
+						    <li><a href="#"><img src="images/goods13.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li><a href="#"><img src="images/goods14.jpg">
+                            	<p>iPhone 6s /6s Plus 苹果手机Apple 4G</p>
+                                <span>¥3999</span>
+                                <i><em>免息</em>月供 ¥153起</i>
+                            </a></li>
+							
+				  		</ul>
+                        <ul>
+						    <li><a href="#"><img src="images/goods15.jpg">
+                            	<p>iPhone 6  苹果Apple 4G手机</p>
+                                <span>¥2999</span>
+                                <i><em>免息</em>月供 ¥143起</i>
+                            </a></li>
+                            <li class="more2"><a href="#">
+                            	<h2>MORE</h2>
+                          		<p>查看更多</p>
+                            </a></li>
+							
+				  		</ul>
+		 		</div>
+               
+         </div>
+         <!--滑动 end-->
+         <script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#picScroll10",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					autoPage:true, //自动分页
+					pnLoop:"false", // 前后按钮不循环
+					switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+				});
+		</script>
+                </div>
+                 <!--show_goods end-->
+        <div>
+        <!--goods end-->
+         <!--goods-->
+   </section>
+   <section class="floor_wrap">
+   		<div class="title">今日热卖</div>
+        <div class="hotgoods">
+        	<img src="images/hot1.jpg">
+            <div class="hot_con">
+            	<p>iPhone 6  苹果Apple 4G手机</p>
+                <span>¥2999</span>
+                <i><em>免息</em>月供 ¥143起</i>
+            </div>
+        </div>
+        <div class="hotgoods">
+        	<img src="images/hot2.png">
+            <div class="hot_con">
+            	<p>iPhone 6  苹果Apple 4G手机</p>
+                <span>¥2999</span>
+                <i><em>免息</em>月供 ¥143起</i>
+            </div>
+        </div>
+        <div class="hotgoods">
+        	<img src="images/hot3.jpg">
+            <div class="hot_con">
+            	<p>iPhone 6  苹果Apple 4G手机</p>
+                <span>¥2999</span>
+                <i><em>免息</em>月供 ¥143起</i>
+            </div>
+        </div>
+        <div class="hotgoods">
+        	<img src="images/hot4.jpg">
+            <div class="hot_con">
+            	<p>iPhone 6  苹果Apple 4G手机</p>
+                <span>¥2999</span>
+                <i><em>免息</em>月供 ¥143起</i>
+            </div>
+        </div>
+        
+   </section>
+   
+   
+   <!--底部操作菜单 foot_tab_box-->
+<footer class="foot_tab_box">
+  <ul>
+    <li class="foot_tab_on"><a href="index.html" class="iconfont">&#xe600;<span>首页</span></a></li>
+    <li> <a href="classify.html" class="iconfont">&#xe633;<span>分类</span></a></li>
+    <li> <a href="credit.html" class="iconfont">&#xe610;<span>信用钱包</span></a> </li>
+    <li> <a href="#" class="iconfont">&#xe662;<span>借款</span></a> </li>
+    <li> <a href="my.html" class="iconfont">&#xe60f;<span>我的</span></a></li>
+  </ul>
+</footer>
+<!--底部操作菜单 foot_tab_box end -->
+</div>
+
+<script>
+//鼠标滚动距顶部多远 才显示一个块
+$(window).scroll(function(e){
+
+   if($(document).scrollTop()>6){
+	
+		 $(".m_header").addClass("fixed");
+	
+   }
+   
+   else{
+	    $(".m_header").removeClass("fixed");
+	
+   }
+ 
+});
+
+
+</script>
+</body>
+</html>

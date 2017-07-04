@@ -1,0 +1,233 @@
+.container{
+    padding:0;
+}
+.banner_box{
+    width: 100%;
+    overflow: hidden;
+}
+.banner_box .banner{
+    width: 300%;
+}
+.banner_box .banner img{
+    display: block;
+    width: 33.33%;
+    height: auto;
+    float: left;
+}
+/*分类*/
+.main ul{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.main ul li{
+    width: 25%;
+    padding-left:5%;
+    padding-right:5%;
+}
+.main ul li img{
+    width: 100%;
+}
+.main ul li p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+/*商品*/
+.shopping{
+    background-color: #DADADA;
+    clear: both;
+    padding: 20px 0;
+}
+.shopping img{
+    width: 100%;
+}
+.shopping .cellA{
+    width:50%;
+    border-right:1px solid #dddddd;
+    float:left;
+}
+.shopping .cellB{
+    clear: both;
+}
+.shopping .cellC{
+    width:50%;
+    float:left;
+}
+/*系列*/
+.list img{
+    width: 100%;
+}
+.list_top{
+    width: 100%;
+    height:150px;
+    background: url("../images/store/bg.jpg") no-repeat;
+    background-size:cover ;
+}
+.list_top ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list_top ul li{
+    padding:6rem 3% 0px;
+    width: 25%;
+}
+.list_bottom{
+    /*width: 100%;*/
+}
+.list_bottom h5{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.list_bottom h4{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.list_bottom ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.list_bottom ul li{
+    width: 33%;
+}
+.list_bottom ul li p{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.list_bottom ul li span{
+    display: block;
+    font-size: 14px;
+    color:red;
+    width: 100%;
+    text-align: center;
+}
+.list_bottom .btn_box{
+    padding: 20px 0;
+    width: 100%;
+}
+.list_bottom .btn_box .btn_btn{
+    text-align: center;
+    width:30%;
+    background-color:red;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+/*楼层*/
+.list_all img{
+    width: 100%;
+}
+.list_all{
+    padding-top: 20px;
+    background-color:#DADADA;
+}
+
+.list_all .fl{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    float: left;
+    color: #ff574d;
+    margin-left: 10px;
+    padding:0 10px;
+    border-left:2px solid #ff574d;
+}
+.list_all .fr{
+    height: 30px;
+    line-height:30px;
+    float:right;
+    margin-right: 10px;
+    padding:0 10px;
+}
+.list_all .list_all_box>p{
+    height: 30px;
+    background-color: #fff;
+    border-bottom:1px solid #dddddd ;
+    margin:0;
+}
+.list_all .list_all_box div{
+    border-bottom:1px solid #dddddd ;
+}
+.list_all .list_all_box ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color: #fff;
+}
+.list_all .list_all_box ul li{
+    width: 30%;
+    padding:0 2%;
+}
+.list_all .list_all_box ul li:nth-child(2n){
+    border-right:1px solid #dddddd;
+    border-left:1px solid #dddddd;
+}
+.list_all .list_all_box ul li p{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.list_all .list_all_box ul li span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
+/*全部商品*/
+.all{
+    padding-top:10px;
+
+}
+.all img{
+    width: 100%;
+}
+.all .all_title{
+    font-size: 13px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #969696;
+    background-color: #DADADA;
+}
+.all ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.all ul li{
+    background-color: #fff;
+    border-bottom: 1px solid #dddddd;
+    width: 50%;
+}
+.all ul li:nth-child(2n+1){
+    border-right: 1px solid #dddddd;
+}
+.all ul li p{
+    padding:0 10px;
+    height: 30px;
+    line-height: 15px;
+    margin: 0;
+}
+.all ul li span{
+    width: 100%;
+    padding: 0 10px;
+    color: #ff1e19;
+    font-size: 13px;
+    font-weight: bold;
+}

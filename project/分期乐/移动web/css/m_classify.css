@@ -1,0 +1,39 @@
+/* CSS Document */
+header{ width:100%; height: 1.76rem; background:#fff;text-align:center; line-height:1.76rem }
+.fixed{position:fixed}
+header .goback{ border-color:#a7afc2; border-width:0.02rem 0.02rem 0 0; width:0.6rem; height:0.6rem; border-style:solid; transform:rotate(-135deg); position:absolute; left:0.6rem; top:0.5rem}
+header h1{ font-size:0.7rem; font-weight:normal; color:#394050}
+
+.search{ width:100%; height:1.76rem; background:#fff; border-top:0.02rem solid #f2f2f2; padding:0 0.75rem; position:relative}
+.search .search_btn{ color:#a7afc2; font-size:0.8rem; position:absolute; top:0.4rem; left:1.1rem}
+.search input{ height:1.2rem; background:#ededed; width:100%; padding-left:1.5rem; border-radius:0.1rem;margin-top:0.25rem; font-size:0.5rem; width:100%;}
+
+.floor{ width:100%;margin-top:0.4rem}
+.floor .ad{ width:100%; height:3.68rem;}
+.floor .ad img{ width:100%;}
+
+.tit{ width:100%; height:2.32rem; background:#fff; color:rgba(48,64,80,.6); line-height:2.32rem; text-align:center; font-size:0.6rem; border-bottom:0.02rem solid #f2f2f2}
+.con{ width:100%; height:14.3rem; background:#fff}
+.con2{ height:9.95rem}
+.con li{ width:25%; height:3.1rem; margin-top:1.25rem; text-align:center; float:left;}
+.con li img{ width:2rem; display:inline-block; margin-bottom:0.45rem;}
+.con li p{ width:100%; font-size:0.5rem; color:#394050; height:0.32rem; line-height:0.32rem}
+.con li .detail_c{ width:80%; height:100%; background:#fff; position: fixed; top:0; max-width:15rem; z-index:1000; right:0; display:none}
+.con li .detail_c h4{ width:100%; height:2.32rem; background:#fff; color:rgba(48,64,80,.6); line-height:2.32rem; text-align:center; font-size:0.6rem; border-bottom:0.02rem solid #f2f2f2}
+.mask{width:100%; height:35rem; background: rgba(0,0,0,0.2); position:fixed; z-index:999; display:none}
+
+
+
+
+
+
+
+
+
+.foot_tab_box{width:100%; height:2.15rem; border-top:1px solid #ddd; background:rgba(255,255,255,1); position:fixed; bottom:0; left:0; z-index:1000;}
+.foot_tab_box ul{ width:100%; height:2rem; display:flex;}
+.foot_tab_box ul li{ flex:1;padding-top:0.2rem; }
+.foot_tab_box ul li a{ width:1.6rem; height:1.6rem; display:block; margin:0 auto;font-size:1rem; text-align:center; color:#838c96}
+.foot_tab_box ul li a span{ font-size:0.4rem; display:block}
+
+.foot_tab_box ul li.foot_tab_on a{ color:#fe4979}

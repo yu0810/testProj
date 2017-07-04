@@ -1,0 +1,93 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 2;
+    background:#017ed0;
+    line-height: 4rem;    text-align: center;
+}
+.header a{
+    float: left;
+    padding-left: 10px;
+    color: #fff;
+}
+.header h3{
+    margin-top: 0;
+    line-height: 4rem;
+    font-size: 16px;
+    color: #fff;
+}
+.box{
+    list-style: none;
+    margin-top: 4.5rem;
+    width: 100%;
+    padding-left: 0;
+}
+.box li{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+    padding-top:0;
+    border-bottom: 1px solid #d8d8d8;
+}
+.box li .imgbox{
+    width:26%;
+    float: left;
+}
+.box li .imgbox img{
+    width: 100%;
+}
+.box li .texbox{
+    width: 64%;
+    float:left;
+    margin-left: 10px;
+    padding-bottom:50px;
+    position: relative;
+}
+.box li .tit{
+    width:100%;
+    float: left;
+}
+.box li .tit h4{
+    float: left;
+}
+.box li .tit span{
+    display: block;
+    background: #659d0e;
+    float: left;
+    margin-left:7px;
+    margin-top:5px;
+    padding:3px;
+}
+.box li .texbox .p1{
+    color: #659d0e;
+}
+.box li .texbox .bbox{
+    width: 100%;
+    height:30px;
+    position: absolute;
+    bottom: 0;
+}
+.box li .texbox .bbox span{
+    line-height: 30px;
+    float: left;
+    width:70%;
+    font-size: 12px;
+}
+.box li .texbox .bbox .buy {
+    width:40%;
+    height: 30px;
+    position: absolute;
+    background: #ff8600;
+    border-radius: 20px;
+    right:-15%;
+}
+.box li .texbox .bbox .buy p{
+    line-height:30px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}

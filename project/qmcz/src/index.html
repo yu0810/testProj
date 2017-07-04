@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>全民创造</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <span href="#" id="logo">全民<span>创造</span></span>
+        </div>
+
+
+            <ul class="nav navbar-nav nav_left">
+                <li class="nav_cur"><a href="#">首页</a></li>
+                <li><a href="#">节目专栏</a></li>
+                <li><a href="#">圈子</a></li>
+
+                <li style="position: relative"><input type="text" placeholder="输入你想搜索的内容" class="form-control"><i class="glyphicon glyphicon-search"></i></li>
+            </ul>
+            <ul class="nav navbar-nav  navbar-right">
+                <li><a href="#">登录</a></li>
+                <li><a ui-sref="register">注册</a></li>
+
+            </ul>
+
+    </nav>
+</header>
+
+<div ui-view class="globle">
+
+</div>
+
+<!--页脚部分 -->
+<footer>
+    <div class="mainInnerBox">
+        <div class="siteMFooter">
+            <div class="siteMFooterABox">
+                <a href="#" rel="nofollow" class="site_hoverCss3A" target="_blank">关于我们</a><span>|</span>
+                <a href="#" rel="nofollow" class="site_hoverCss3A" target="_blank">联系我们</a><span>|</span>
+                <a href="#" rel="nofollow" class="site_hoverCss3A" target="_blank">服务协议</a><span>|</span>
+                <a href="#" rel="nofollow" class="site_hoverCss3A" target="_blank">项目发起规范</a><span>|</span>
+                <a href="#" rel="nofollow" class="site_hoverCss3A" target="_blank">公司资质</a><span>|</span>
+                <a href="#" class="site_hoverCss3A" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="siteBFooter">
+        <p class="siteBFooter_p">&copy;2015 版权所有 京ICP证150145号 | 出版物经营许可证编号新出发（京）批字第直140141号 | 营业性演出许可证 编号：京市演2102 | 食品流通许可证 编号：SP1101051410000000 | 京公网安备11010502000000</p>
+    </div>
+</footer>
+<!--页脚部分 end-->
+
+<script src="lib/angular.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+<script src="lib/jquery-1.11.1.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller/controllers.js"></script>
+<script>
+    setTimeout(function () {
+        $(".hot .hot-list li").hover(function () {
+            $(this).addClass("list-cur").siblings().removeClass("list-cur");
+
+            $(".hot .hot-con").eq($(this).index()).addClass("hot-cur").siblings().removeClass("hot-cur");
+        }, function () {
+            $(this).addClass("").siblings().removeClass("");
+            $(".hot .hot-con").eq($(this).index()).addClass("").siblings().removeClass("");
+        });
+    },500);
+</script>
+
+
+</body>
+</html>

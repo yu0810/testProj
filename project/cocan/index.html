@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Conan电影</title>
+    <script src="lib/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/changeWebPack.js"></script>
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li><a href="map/index.html" style="color: #fff"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+        <li><i class="glyphicon glyphicon-search"></i>
+            <input type="search" placeholder="搜索正版电影" >
+        </li>
+        <li><i class="glyphicon glyphicon-shopping-cart"></i></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="topshow">
+        <div class="top-title">
+            <p>正在热映（51部）</p>
+            <a href="index_detail.html"><i class="glyphicon glyphicon-arrow-right"></i></a>
+        </div>
+        <ul>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+            <li><img src="" alt=""><p></p></li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="centershow">
+        <div class="center-title">
+            <p>即将上映（47部）</p>
+            <a href=""><i class="glyphicon glyphicon-arrow-right"></i></a>
+        </div>
+    </div>
+    <!--轮播-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="http://img5.mtime.cn/mg/2017/04/14/083203.44264292.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://img5.mtime.cn/mg/2017/04/17/145935.61185735.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://img5.mtime.cn/mg/2017/04/15/081726.39289576.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="http://img5.mtime.cn/mg/2017/04/12/085119.23897146.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                paginationClickable: true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false
+            });
+        </script>
+    </div>
+
+    <div class="bottomshow">
+        <div class="bottom-title">
+            <P>今日热点</P>
+            <a href=""></a><br/>
+            <span></span>
+        </div>
+        <ul>
+            <li><img src="http://img5.mtime.cn/CMS/Gallery/2017/02/23/144143.49567132_900.jpg" alt=""></li>
+            <li><img src="http://img5.mtime.cn/CMS/Gallery/2017/02/23/144150.51001018_900.jpg" alt=""></li>
+            <li><img src="http://img5.mtime.cn/CMS/Gallery/2017/02/24/173213.51380251_900.jpg" alt=""></li>
+        </ul>
+        <em></em>
+    </div>
+
+    <ul class="media-list">
+        <li class="media">
+            <a href="" c lass="media-object pull-left">
+                <img src="http://img5.mtime.cn/mg/2017/02/17/082531.92472473.jpg" alt="">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading one"> </h4>
+                <p class="one"></p>
+            </div>
+        </li>
+        <br/>
+        <li class="media">
+            <a href="" class="media-object pull-left">
+                <img src="http://img5.mtime.cn/mg/2017/02/13/174516.24490783.jpg" alt="">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading two"> </h4>
+                <p class="two"></p>
+            </div>
+        </li>
+    </ul>
+
+
+</div>
+
+<div class="footer">
+    <ul>
+        <li class="act"><i class="glyphicon glyphicon-home"></i>
+            <p>首页</p></li>
+        <li><i class="glyphicon glyphicon-credit-card"></i>
+            <p>购票</p></li>
+        <li><i class="glyphicon glyphicon-th-large"></i>
+            <p>商城</p></li>
+        <li><i class="glyphicon glyphicon-globe"></i>
+            <p>发现</p></li>
+        <li><i class="glyphicon glyphicon-user"></i>
+            <p>我的</p></li>
+    </ul>
+</div>
+
+
+
+
+
+</body>
+</html>

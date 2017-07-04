@@ -1,0 +1,41 @@
+/* CSS Document */
+/* CSS Document */
+.ww{ width:940px; margin:0 auto}
+body{color:#707070}
+#topbar{ width:100%;height:120px; background:#fff; border-bottom:5px solid #3b9bff;}
+.topbar{ height:120px; line-height:110px; position:relative}
+.topbar img{ display:inline-block;}
+.topbar p{ display:inline-block; font-size:20px; position:relative; color:#3b9bff; top:12px; left:20px}
+.topbar .reg{ display:inline-block; font-size:16px; position: absolute; color:#3b9bff; top:16px; right:0}
+
+
+
+#register_main{ width:100%;  margin-top:25px;}
+.register_main{  border:1px solid #3b9bff; background:#fff}
+
+.pasform{ width:700px; font-size:16px; margin-left:200px;}
+.pasform li{ width:100%; height:50px; margin:25px 0}
+.pasform label{ width:100px; height:50px;  display:block; float:left; line-height:50px; text-align:right; padding-right:20px;}
+.pasform input{ width:330px; height:50px; padding:15px; box-sizing:border-box; font-size:16px; float:left}
+.pasform p{width:250px; height:50px; background:rgba(0,0,0,0.1); float:left; line-height:50px; font-size:14px; box-sizing:border-box; padding-left:20px; color:rgba(204,0,0,1); display:none}
+
+#uMes{ width: 200px;}
+li .get{ width:120px; display:inline-block; height:50px; box-sizing:border-box; margin-left:10px; background:#44a0ff; line-height:50px; color:#fff; text-align:center; cursor:pointer}
+li #uSub{ background:#44a0ff; color:#fff; border:none; cursor:pointer}
+li #ckb{ width:15px; height:15px; border:1px solid #44a0ff; margin-top:18px;}
+li .arg{ font-size:14px; display:inline-block; margin-left:10px; line-height:50px;}
+li .arg a{ color:#44a0ff}
+
+.password1,password2{ display:none}
+
+
+
+/*footer*/
+footer{ width:100%; height:150px; background: #757575; color:#f2f2f2; margin-top:25px;}
+footer .foot{ height:126px;box-sizing:border-box; padding:30px 0;}
+footer .foot  .foot_logo{width:111px;height:34px; margin:5px 18px 0 0; background-position:0 -140px; }
+footer .foot  .foot_logo2{width:96px; height:34px; margin:0 10px 0 0; background-position:-100px -88px;}
+footer .foot a{ color:#fff; display: inline-block}
+footer .foot span{ margin:0 6px;}
+footer .foot .foot_r p{ padding-top:2px; font-size:19px;}
+footer .foot .foot_r p span{ color:#c4f449; font-family:tahoma;}

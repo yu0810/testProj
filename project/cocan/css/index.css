@@ -1,0 +1,136 @@
+.topshow .top-title{
+    width:100%;
+    height: 50px;
+}
+.topshow .top-title>p{
+    float: left;
+    font-size:20px ;
+    line-height: 50px;
+    font-weight: bold;
+}
+.topshow .top-title>a>i{
+     float: right;
+    font-size: 20px;
+    line-height: 50px;
+ }
+.topshow ul{
+    width: 100%;
+    float: left;
+    margin-top: -15px;
+}
+.topshow ul li{
+    width: 24%;
+    height: 145px;
+    float: left;
+    /*background:blue;*/
+    margin-left: 1%;
+    margin-top: 5px;
+    text-align: center;
+}
+.topshow ul li img{
+    width: 100%;
+    height: 113px;
+}
+.topshow ul li p{
+    font-size: 14px;
+}
+
+.centershow .center-title{
+    width:100%;
+    height: 50px;
+    margin-top: 20px;
+    border-top:1px solid #d8d8d8;
+}
+.centershow .center-title>p{
+    float: left;
+    font-size:20px ;
+    line-height: 50px;
+    font-weight: bold;
+}
+.centershow .center-title>a>i{
+    float: right;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide>img{
+    width: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.bottomshow{
+    padding-bottom:20px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.bottomshow .bottom-title{
+    margin-top:20px;
+    padding-top: 10px;
+}
+.bottomshow .bottom-title p{
+    font-size:20px ;
+    font-weight: bold;
+}
+.bottomshow .bottom-title a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.bottomshow .bottom-title span{
+    line-height: 34px;
+    font-size: 14px;
+    color: #666;
+}
+.bottomshow ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bottomshow ul li{
+    width: 33%;
+}
+.bottomshow ul li img{
+    width: 100%;
+}
+.bottomshow>em{
+
+}
+
+.media-list{
+    margin-top: 10px;
+}
+
+.media-list .media .media-object{
+    display: block;
+    width:40% ;
+}
+.media-list .media .media-object img{
+    width: 100%;
+}
+.media-list .media .media-body h4{
+    font-weight: bold;
+}
+.media-list .media .media-body p{
+    font-size: 14px;
+    color: #666;
+}

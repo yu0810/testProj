@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Conan电影</title>
+    <script src="lib/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/order.css">
+    <script type="text/javascript" src="lib/supSlide/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="lib/supSlide/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="js/changeWebPack.js"></script>
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li><i class="glyphicon glyphicon-map-marker"></i></li>
+        <li><i class="glyphicon glyphicon-search"></i>
+            <input type="search" placeholder="搜索正版电影" >
+        </li>
+        <li><i class="glyphicon glyphicon-shopping-cart"></i></li>
+    </ul>
+</div>
+
+<div class="container">
+    <ul class="order_nav">
+        <li>全部</li>
+        <li>附近</li>
+        <li>价格<i class="glyphicon glyphicon-sort"></i></li>
+        <li><i class="glyphicon glyphicon-glass"></i>筛选</li>
+    </ul>
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <ul><li></li><li></li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="" target="_blank"><img src="images/order/banner1.jpg" /></a></li>
+                <li><a href="" target="_blank"><img src="images/order/banner2.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed-att">
+        <p>定位失败，请开启定位授权</p>
+    </div>
+    <div class="order_content">
+
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+</script>
+<script src="js/order1.js">
+
+</script>
+<div class="footer" >
+    <ul>
+        <li><i class="glyphicon glyphicon-home"></i>
+            <p>首页</p></li>
+        <li  class="act"><i class="glyphicon glyphicon-credit-card"></i>
+            <p>购票</p></li>
+        <li><i class="glyphicon glyphicon-th-large"></i>
+            <p>商城</p></li>
+        <li><i class="glyphicon glyphicon-globe"></i>
+            <p>发现</p></li>
+        <li><i class="glyphicon glyphicon-user"></i>
+            <p>我的</p></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

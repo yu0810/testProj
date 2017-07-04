@@ -1,0 +1,99 @@
+/* CSS Document */
+
+/*header*/
+header{ width:100%; height:114px; border-top:5px solid #1f8fcf;}
+header .header{ width:1200px; height:100%; margin:0 auto;}
+					/*logo*/
+header .header h1{ width:199px; height:57px; float:left; margin-top:21px;}
+header .header h1 a{ width:100%; height:100%; display:block;}
+header .header h1 a img{ width:100%; height:auto; overflow:hidden;}
+					/*nav*/
+header .header nav{ width:755px; height:100%; float:right;}
+header .header nav ul{ width:100%; height:100%;}
+header .header nav ul li{ height:100%;float:left;text-align:center;}
+header .header nav ul li .a1{ font-size:16px;padding:35px 24px; color:#000;display:block}
+header .header nav ul li .a1 span{ font-size:12px; color:#666; display:block}
+header .header nav ul li:nth-child(3) .a1{ background:#1f8fcf;color:#FFF}
+header .header nav ul li:nth-child(3) .a1 span{ color:#FFF}
+					/*二级导航*/
+header .header nav ul li .subnav {border-top:1px solid #000;width:100%; height:auto;background:#1f8fcf;padding:12px; display:none}
+header .header nav ul li .subnav p{ width:100%; height:100%;line-height:30px;}
+header .header nav ul li .subnav p a{ color:#FFF}
+					/*hover*/
+header .header nav ul li .a1:hover{background:#1f8fcf; color:#FFF}
+header .header nav ul li .a1:hover span{ color:#FFF}
+header .header nav ul li:hover .subnav{ display:block}
+header .header nav ul li .subnav p:hover a{ color:#FF0; text-decoration:underline} 
+/*header  end*/
+					/*banner*/
+.banner{ width:100%; height:300px; background:url(../images/news_bg.jpg) no-repeat center top;}/*banner*/
+
+
+/*newsdetail*/
+.newsdetail{width:100%;overflow:hidden;}
+					
+.newsdetail .newsdetail_tit{width: 380px;height:155px;margin:28px auto 20px auto;background:url(../images/bg-line.jpg) no-repeat center; text-align:center;} 
+.newsdetail .newsdetail_tit .Ch{font-size: 26px;color:#000;}
+.newsdetail .newsdetail_tit .En{font-size: 16px;color: #666;font-family: "Comic Sans MS";}
+.newsdetail .newsdetail_tit p{ margin-top:60px}
+.newsdetail .newsdetail_tit p a{ padding:12px 44px; font-size:15px}
+.newsdetail .newsdetail_tit p a:nth-child(2){ padding:12px 22px;background:#1f8fcf; color:#fff}
+.newsdetail .newsdetail_tit p a:hover{background:#1f8fcf; color:#fff}
+
+.newsdetail article{ width:1200px; height:1900px; margin:0 auto; border-top:1px solid #bbb; border-bottom:1px solid #bbb;}
+.newsdetail article header{ width:510px; height:70px; margin:25px auto 75px auto; border:none;text-align:center; line-height:30px}
+.newsdetail article header h3{font-weight: bold;font-size: 20px; color:#000000}
+.newsdetail article header p{color: #666;}
+
+.newsdetail .newsdetail_main{ width:1200px; margin:0 auto}
+.newsdetail .newsdetail_main p{ text-indent:2em; margin-bottom:28px}
+.newsdetail .newsdetail_main p img{ width:1200px; height:auto; margin:0 auto; display:block}
+
+.newsdetail .page{ width:1200px; height:95px; margin:0 auto; padding-top:25px}
+.newsdetail .page p{ color:#000000;}
+.newsdetail .page p a{ color:#8b8b8b; }
+.newsdetail .page .return{ float:right}
+.newsdetail .page .return a{color:#8b8b8b;}
+.newsdetail .page p a:hover,.newsdetail .page .return a:hover{ color:#1f8fcf}
+
+.newsdetail .share{ width:1200px; height:35px; margin:0 auto; line-height:35px;padding-left:20px; margin-bottom:45px}
+.newsdetail .share span{float: left; font-size:15px}
+
+
+/*newsdetail  end*/
+
+/*footer*/
+footer{ width:100%; height:395px; float:left}
+footer .foot{ width:100%; height:260px; background:#313132}
+footer .foot .foot_top{ width:1200px; height:100%; margin:0 auto;}
+footer .foot .foot_top .top_l{ width:200px; height:100%; border:1px solid #282828; float:left}
+footer .foot .foot_top .top_l a{ width:100%; height:100%; display:block; background:url(../images/logo-foot.png) no-repeat center}
+
+footer .foot .foot_top .top_main{ width:800px; height:260px; float:left}
+footer .foot .foot_top .top_main ul{ width:100%; height:100%}
+footer .foot .foot_top .top_main ul li{ width:200px; height:100%; border-right:1px solid #282828; float:left; padding-top:48px; text-align:center}
+footer .foot .foot_top .top_main ul li:nth-child(1) h4{ background:url(../images/foot-1.png) no-repeat 40px center}
+footer .foot .foot_top .top_main ul li:nth-child(2) h4{ background:url(../images/foot-2.png) no-repeat 40px center}
+footer .foot .foot_top .top_main ul li:nth-child(3) h4{ background:url(../images/foot-3.png) no-repeat 40px center}
+footer .foot .foot_top .top_main ul li:nth-chi 100%; height:40px;font-size:16px; color:#838384;line-height:40px}
+footer .foot .foot_top .top_main ul li p{ line-height:25px}
+footer .foot .foot_top .top_main ul li p a{font-size:12px; color:#FFF}
+footer .foot .foot_top .top_main ul li img{ display:block; margin:0 auto; margin-top:10px}
+
+footer .foot .foot_top .top_r{ width:200px; height:260px;border-right:1px solid #282828; float:left;padding-top:48px; text-align:center}
+footer .foot .foot_top .top_r h4{width:100%; height:40px;font-size:16px; color:#838384;line-height:40px;background:url(../images/foot-5.png) no-repeat 40px center}
+footer .foot .foot_top .top_r p{font-size:23px; color:#f2bf12; line-height:30px}
+footer .foot .foot_top .top_r time{font-size:12px; color:#FFF}
+footer .foot .foot_top .top_r p a{ padding:12px 20px; padding-left:40px;background:#067dc1 url(../images/kf.png) no-repeat 20px center; color:#FFF;margin-top:20px; line-height:90px; border-radius:5px; box-shadow:0px 2px 0px 1px #07407a}
+					
+footer .foot_bot{ width:100%; height:135px; background:#282828; padding-top:32px}
+footer .foot_bot p{color: #888;font-size: 12px; text-align:center}
+footer .foot_bot .pic{ width:1200px;height:41px; margin:0 auto;text-align:center; margin-top:20px}
+footer .foot_bot .pic a{}
+footer .foot_bot img{ width:105px; height:auto; margin:0 10px}
+					/*hover*/
+footer .foot .foot_top .top_main ul li p a:hover{ color:#ffbf23}
+footer .foot .foot_top .top_r p a:hover{background:#ffbf23 url(../images/kf.png) no-repeat 20px center;box-shadow:0px 2px 0px 1px #936616}
+/*footer  end*/
+
+					

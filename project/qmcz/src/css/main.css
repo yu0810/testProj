@@ -1,0 +1,168 @@
+
+header .navbar-default{
+    height: 70px;
+    background: #fff;
+    padding: 0 30px  0 40px;
+    line-height: 70px;
+    border-color: transparent;
+
+}
+header .navbar{
+    margin-bottom: 0;
+    border: none;
+}
+
+#logo{
+    color: #190e0a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+#logo span{
+    color: #fb4402;
+}
+
+/**/
+.nav_cur{
+    background: #f5f6f8;
+}
+
+.navbar-nav > li > a{
+    line-height: 40px;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #838383;
+}
+.navbar-nav > li > input{
+    border: none;
+    border-left: 1px solid #dadadc;
+    height: 70px;
+    padding-left: 60px;
+    font-size: 14px;
+    color: #838383;
+}
+.form-control:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+.form-control{
+    border-radius: 0;
+}
+
+.navbar-nav > li > i{
+    position: absolute;
+    color:#838383 ;
+    font-size: 18px;
+    top:28px;
+    left: 30px;
+}
+
+.navbar-default .navbar-right > li > a{
+    color: #fb4402;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.globle{
+    min-height: 450px;
+}
+
+
+/*轮播*/
+.slide .container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.carousel-inner > .item > img{
+    width: 100%;
+}
+/*显示器*/
+.carousel-indicators{
+   margin-left: 0;
+}
+.carousel-indicators li{
+    margin: 0 4px;
+    background: rgba(0,0,0,0.3);
+    border:none;
+    border-radius: 0;
+}
+.carousel-indicators .active{
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+}
+
+/*热门推荐*/
+.pub-title h2{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.pub-title b{
+    width: 10px;
+    height: 25px;
+    background: #50abf2;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+
+/*页脚部分*/
+footer {
+    width: 100%;
+    background: #150b09;
+    clear: both
+}
+
+.mainInnerBox {
+    width: 1200px;
+    margin: 0 auto;
+    display: block
+}
+
+.mainInnerBox .siteMFooter {
+    padding-top: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .15) inset;
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+
+.siteMFooterABox {
+    height: 20px;
+    line-height: 20px;
+    color: #808686;
+}
+
+.siteMFooterABox a {
+    color: #808686;
+    line-height: 20px;
+    margin: 0 10px
+}
+
+.siteBFooter {
+    background-color: #150b09;
+    width: 100%
+}
+
+.siteBFooter_p {
+    color: #69798E;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*页脚部分 end*/
+
+
+
+
+
+
+
+

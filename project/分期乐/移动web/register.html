@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--解决uc浏览器字体变大的问题-->
+<meta name="wap-font-scale" content="no">
+<!--顶部状态条的颜色    defalult  白色    black 黑色                下面的词灰色半透明-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--网站开启对web app程序的支持-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!--手机号码不被显示为拨号链接-->
+<meta name="format-detection" content="telephone=no, address=no">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>分期乐触屏版-登录</title>
+<meta name="keywords" content="分期乐,分期付款,年轻人分期,分期购物,电脑分期付款,手机分期付款,相机分期付款,fenqile" />
+<meta name="description" content="分期乐是国内面向年轻人提供分期消费的金融服务平台，购买商品首付月供全网最低，还款超低手续费，支持网银、支付宝、财付通支付，可使用身份证办理分期；平台提供的手机、电脑、相机等商品均来自京东、易迅直供，100%正品行货。" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/m_base.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+<div class="m_layout">
+	<div class="header">
+    <h2>注册分期乐账号</h2>
+    <a href="login.html" class="goback"></a>
+    <img src="images/login_logo.png"> 
+    </div>
+    <form>
+    	<div class="login">
+        	<ul class="mes_email">
+            <li><img src="images/cost_ico.png">
+              <input type="text" id="mes_login" placeholder="输入本人手机号注册">
+              
+              </li>
+              
+            <li><img src="images/i_safe.png">
+            <input type="password" placeholder="6位数字验证码" id="mes_login1">
+           	<span class="get">获取验证码</span>
+            </li>
+            </ul>
+        </div>
+        <div class="isubmit"><input  type="submit" value="下一步" id="i_login"></div>
+        <!--<div class="refo"><a href="login.html" class="fl">账号密码登录</a><a href="" class="fr">忘记密码</a></div>-->
+    </form>
+    <div class="tipbar">
+    	<ul><li><img src="images/limit_ico.png">先消费后还款</li>
+   	    <li><img src="images/lh_ico.png">万元额度可取现</li>
+        <li><img src="images/i_safe.png">40天免息</li>
+        </ul>
+    </div>
+    <!--<div class="register"><a href="">没有账号？极速注册</a></div>-->
+  <script type="text/javascript">
+	var p7=/^[0-9]{3,}[@][1][6][3][.][c][o][m]$/;
+	var p6=/^[0-9]{3,}[@][s][i][n][a][.][c][o][m]$/;
+	var p3=/^[0-9]{3,}[@][q][q][.][c][o][m]$/;
+	var p5=/^[1]\d{10}$/;
+	var p4;
+	$("#mes_login").blur(function(){
+		p4=document.getElementById("mes_login").value;
+		if(p4==""){$(".fault1").show();}else if((!p3.test(p4))&&(!p5.test(p4))&&(!p6.test(p4))&&(!p7.test(p4))){$(".fault11").show();}else{$(".fault1").hide();$(".fault11").hide();};
+		});
+    var p1=/\w{6,}/;
+	var p2;
+	$("#mes_login1").blur(function(){
+		p2=document.getElementById("mes_login1").value;
+		if(!p1.test(p2)){$(".fault2").show();}else{$(".fault2").hide();};
+		});
+	
+    </script>
+</div>
+</body>
+</html>

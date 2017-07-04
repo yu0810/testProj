@@ -1,0 +1,72 @@
+/*显示器*/
+
+#mySlide .slider-pager{
+
+}
+#mySlide .slider-pager .slider-pager-page.active{
+    color:rgba(223,46,54,1);
+
+}
+#mySlide .slider-pager .slider-pager-page{
+    color:rgba(223,46,54,0.3)
+}
+#mySlide .letgo{
+
+    display: inline-block;
+    background:rgba(223,46,54,1) ;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 50px;
+    border-radius:20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+
+
+#index-slide .slider-slides {
+    width: 100%;
+    position: relative;
+}
+#index-slide img{
+    width: 100%;
+    height: auto;
+
+}
+#index-slide p{
+
+    position: absolute;
+    bottom:3%;
+
+    width: 95%;
+    color:#fff;
+    text-align: right;
+
+}
+ .item a{
+    text-decoration: none;
+     color: #333;
+}
+ .item .date{
+     line-height: 30px;
+ }
+.item .redbox{
+    padding: 1px 10px;
+    color: rgba(223,46,54,1);
+    border: 1px solid rgba(223,46,54,1);
+    font-size: 14px;
+}
+.item .liulan{
+    font-size: 14px;
+    float: right;
+}
+
+/*详情*/
+img{
+    width: 100%;
+    height: auto;
+}
